@@ -5,45 +5,45 @@ script_version("2.1")
 script_dependencies('CLEO 4+', 'SAMPFUNCS', 'Dear Imgui', 'SAMP.Lua')
 script_moonloader(026)
 script_changelog = [[  v2.1 [22.09.2019]
-* FIX: Проверка афк адаптирована под обновление sleep (SRP).
+* FIX: РџСЂРѕРІРµСЂРєР° Р°С„Рє Р°РґР°РїС‚РёСЂРѕРІР°РЅР° РїРѕРґ РѕР±РЅРѕРІР»РµРЅРёРµ sleep (SRP).
 
   v2.0 [22.09.2019]
 * INFO: Open Source.
 
 	v1.27 [01.05.2019]
-* FIX: Восстановление работоспособности
-* UPD: Изменён формат отображения даты с европейского на СНГ.
+* FIX: Р’РѕСЃСЃС‚Р°РЅРѕРІР»РµРЅРёРµ СЂР°Р±РѕС‚РѕСЃРїРѕСЃРѕР±РЅРѕСЃС‚Рё
+* UPD: РР·РјРµРЅС‘РЅ С„РѕСЂРјР°С‚ РѕС‚РѕР±СЂР°Р¶РµРЅРёСЏ РґР°С‚С‹ СЃ РµРІСЂРѕРїРµР№СЃРєРѕРіРѕ РЅР° РЎРќР“.
 
 	v1.26 [02.04.2019]
-* FIX: Улучшен захват смсок на ERP.
-* FIX: Фикс фикса краша при настройке звука через клавиатуру вне доступного диапазона.
+* FIX: РЈР»СѓС‡С€РµРЅ Р·Р°С…РІР°С‚ СЃРјСЃРѕРє РЅР° ERP.
+* FIX: Р¤РёРєСЃ С„РёРєСЃР° РєСЂР°С€Р° РїСЂРё РЅР°СЃС‚СЂРѕР№РєРµ Р·РІСѓРєР° С‡РµСЂРµР· РєР»Р°РІРёР°С‚СѓСЂСѓ РІРЅРµ РґРѕСЃС‚СѓРїРЅРѕРіРѕ РґРёР°РїР°Р·РѕРЅР°.
 
 	v1.25 [31.03.2019]
-* UPD: Обновлен шаблон смски для ERP, гении зачем-то точку добавили в конце.
+* UPD: РћР±РЅРѕРІР»РµРЅ С€Р°Р±Р»РѕРЅ СЃРјСЃРєРё РґР»СЏ ERP, РіРµРЅРёРё Р·Р°С‡РµРј-С‚Рѕ С‚РѕС‡РєСѓ РґРѕР±Р°РІРёР»Рё РІ РєРѕРЅС†Рµ.
 
 	v1.23 [30.03.2019]
-* UPD: Переписана логика отрисовки диалогов, теперь количество сообщений активного диалога влияет на фпс в ~500 раз меньше.
-* UPD: Оптимизирован модуль информации о собеседнике: скорость отрисовки кадра увеличена в три раза.
-* UPD: Оптимизирован список диалогов для лучшей производительности.
-* UPD: Теперь "Ваш_Ник достает мобильник скрывается если скрыты исходящие смс (ERP)".
-* UPD: Теперь smes игнорирует смс от бота Малевича (ERP).
-* UPD: Теперь smes сверяет номер собеседника. Если собеседник изменил номер, напишите ему одну смс вручную/пусть он вам напишет и номер обновится в БД (ARP/TRP/DRP).
-* FIX: Фикс краша при настройке звука через клавиатуру вне доступного диапазона.
+* UPD: РџРµСЂРµРїРёСЃР°РЅР° Р»РѕРіРёРєР° РѕС‚СЂРёСЃРѕРІРєРё РґРёР°Р»РѕРіРѕРІ, С‚РµРїРµСЂСЊ РєРѕР»РёС‡РµСЃС‚РІРѕ СЃРѕРѕР±С‰РµРЅРёР№ Р°РєС‚РёРІРЅРѕРіРѕ РґРёР°Р»РѕРіР° РІР»РёСЏРµС‚ РЅР° С„РїСЃ РІ ~500 СЂР°Р· РјРµРЅСЊС€Рµ.
+* UPD: РћРїС‚РёРјРёР·РёСЂРѕРІР°РЅ РјРѕРґСѓР»СЊ РёРЅС„РѕСЂРјР°С†РёРё Рѕ СЃРѕР±РµСЃРµРґРЅРёРєРµ: СЃРєРѕСЂРѕСЃС‚СЊ РѕС‚СЂРёСЃРѕРІРєРё РєР°РґСЂР° СѓРІРµР»РёС‡РµРЅР° РІ С‚СЂРё СЂР°Р·Р°.
+* UPD: РћРїС‚РёРјРёР·РёСЂРѕРІР°РЅ СЃРїРёСЃРѕРє РґРёР°Р»РѕРіРѕРІ РґР»СЏ Р»СѓС‡С€РµР№ РїСЂРѕРёР·РІРѕРґРёС‚РµР»СЊРЅРѕСЃС‚Рё.
+* UPD: РўРµРїРµСЂСЊ "Р’Р°С€_РќРёРє РґРѕСЃС‚Р°РµС‚ РјРѕР±РёР»СЊРЅРёРє СЃРєСЂС‹РІР°РµС‚СЃСЏ РµСЃР»Рё СЃРєСЂС‹С‚С‹ РёСЃС…РѕРґСЏС‰РёРµ СЃРјСЃ (ERP)".
+* UPD: РўРµРїРµСЂСЊ smes РёРіРЅРѕСЂРёСЂСѓРµС‚ СЃРјСЃ РѕС‚ Р±РѕС‚Р° РњР°Р»РµРІРёС‡Р° (ERP).
+* UPD: РўРµРїРµСЂСЊ smes СЃРІРµСЂСЏРµС‚ РЅРѕРјРµСЂ СЃРѕР±РµСЃРµРґРЅРёРєР°. Р•СЃР»Рё СЃРѕР±РµСЃРµРґРЅРёРє РёР·РјРµРЅРёР» РЅРѕРјРµСЂ, РЅР°РїРёС€РёС‚Рµ РµРјСѓ РѕРґРЅСѓ СЃРјСЃ РІСЂСѓС‡РЅСѓСЋ/РїСѓСЃС‚СЊ РѕРЅ РІР°Рј РЅР°РїРёС€РµС‚ Рё РЅРѕРјРµСЂ РѕР±РЅРѕРІРёС‚СЃСЏ РІ Р‘Р” (ARP/TRP/DRP).
+* FIX: Р¤РёРєСЃ РєСЂР°С€Р° РїСЂРё РЅР°СЃС‚СЂРѕР№РєРµ Р·РІСѓРєР° С‡РµСЂРµР· РєР»Р°РІРёР°С‚СѓСЂСѓ РІРЅРµ РґРѕСЃС‚СѓРїРЅРѕРіРѕ РґРёР°РїР°Р·РѕРЅР°.
 
 	v1.11 [28.03.2019]
-* NEW: Добавлен хоткей фокуса на ввод: при нажатии устанавливается фокус на ввод сообщения в активном диалоге.
-* NEW: Добавлена поддержка Trinity-RPG.
-* UPD: Размеры селектора звуков увеличены.
-* FIX: Исправлен баг хоткея быстрого ответа на смс (мессенджер не открывался если уже был выбран нужный диалог).
-* FIX: Исправлен баг, когда хоткей создания диалога не работал как нужно.
-* FIX: Уведомление о запуске скрипта больше не показывается на неподдерживаемых серверах (скрипт не запускался, но уведомление показывалось).
-* FIX: Исправлен баг, когда курсор оставался после ввода кода активации PREMIUM.
-* FIX: Исправлен баг, когда курсор оставался после перезапуска скрипта через менеджер лицензий.
-* FIX: Исправлен баг, когда машина тормозила после фокуса на окно ввода текста.
-* FIX: Исправлен редкий баг, когда управление персонажем блокировалось, если было закрыто окно мессенджера с активным окном созданием диалога.
+* NEW: Р”РѕР±Р°РІР»РµРЅ С…РѕС‚РєРµР№ С„РѕРєСѓСЃР° РЅР° РІРІРѕРґ: РїСЂРё РЅР°Р¶Р°С‚РёРё СѓСЃС‚Р°РЅР°РІР»РёРІР°РµС‚СЃСЏ С„РѕРєСѓСЃ РЅР° РІРІРѕРґ СЃРѕРѕР±С‰РµРЅРёСЏ РІ Р°РєС‚РёРІРЅРѕРј РґРёР°Р»РѕРіРµ.
+* NEW: Р”РѕР±Р°РІР»РµРЅР° РїРѕРґРґРµСЂР¶РєР° Trinity-RPG.
+* UPD: Р Р°Р·РјРµСЂС‹ СЃРµР»РµРєС‚РѕСЂР° Р·РІСѓРєРѕРІ СѓРІРµР»РёС‡РµРЅС‹.
+* FIX: РСЃРїСЂР°РІР»РµРЅ Р±Р°Рі С…РѕС‚РєРµСЏ Р±С‹СЃС‚СЂРѕРіРѕ РѕС‚РІРµС‚Р° РЅР° СЃРјСЃ (РјРµСЃСЃРµРЅРґР¶РµСЂ РЅРµ РѕС‚РєСЂС‹РІР°Р»СЃСЏ РµСЃР»Рё СѓР¶Рµ Р±С‹Р» РІС‹Р±СЂР°РЅ РЅСѓР¶РЅС‹Р№ РґРёР°Р»РѕРі).
+* FIX: РСЃРїСЂР°РІР»РµРЅ Р±Р°Рі, РєРѕРіРґР° С…РѕС‚РєРµР№ СЃРѕР·РґР°РЅРёСЏ РґРёР°Р»РѕРіР° РЅРµ СЂР°Р±РѕС‚Р°Р» РєР°Рє РЅСѓР¶РЅРѕ.
+* FIX: РЈРІРµРґРѕРјР»РµРЅРёРµ Рѕ Р·Р°РїСѓСЃРєРµ СЃРєСЂРёРїС‚Р° Р±РѕР»СЊС€Рµ РЅРµ РїРѕРєР°Р·С‹РІР°РµС‚СЃСЏ РЅР° РЅРµРїРѕРґРґРµСЂР¶РёРІР°РµРјС‹С… СЃРµСЂРІРµСЂР°С… (СЃРєСЂРёРїС‚ РЅРµ Р·Р°РїСѓСЃРєР°Р»СЃСЏ, РЅРѕ СѓРІРµРґРѕРјР»РµРЅРёРµ РїРѕРєР°Р·С‹РІР°Р»РѕСЃСЊ).
+* FIX: РСЃРїСЂР°РІР»РµРЅ Р±Р°Рі, РєРѕРіРґР° РєСѓСЂСЃРѕСЂ РѕСЃС‚Р°РІР°Р»СЃСЏ РїРѕСЃР»Рµ РІРІРѕРґР° РєРѕРґР° Р°РєС‚РёРІР°С†РёРё PREMIUM.
+* FIX: РСЃРїСЂР°РІР»РµРЅ Р±Р°Рі, РєРѕРіРґР° РєСѓСЂСЃРѕСЂ РѕСЃС‚Р°РІР°Р»СЃСЏ РїРѕСЃР»Рµ РїРµСЂРµР·Р°РїСѓСЃРєР° СЃРєСЂРёРїС‚Р° С‡РµСЂРµР· РјРµРЅРµРґР¶РµСЂ Р»РёС†РµРЅР·РёР№.
+* FIX: РСЃРїСЂР°РІР»РµРЅ Р±Р°Рі, РєРѕРіРґР° РјР°С€РёРЅР° С‚РѕСЂРјРѕР·РёР»Р° РїРѕСЃР»Рµ С„РѕРєСѓСЃР° РЅР° РѕРєРЅРѕ РІРІРѕРґР° С‚РµРєСЃС‚Р°.
+* FIX: РСЃРїСЂР°РІР»РµРЅ СЂРµРґРєРёР№ Р±Р°Рі, РєРѕРіРґР° СѓРїСЂР°РІР»РµРЅРёРµ РїРµСЂСЃРѕРЅР°Р¶РµРј Р±Р»РѕРєРёСЂРѕРІР°Р»РѕСЃСЊ, РµСЃР»Рё Р±С‹Р»Рѕ Р·Р°РєСЂС‹С‚Рѕ РѕРєРЅРѕ РјРµСЃСЃРµРЅРґР¶РµСЂР° СЃ Р°РєС‚РёРІРЅС‹Рј РѕРєРЅРѕРј СЃРѕР·РґР°РЅРёРµРј РґРёР°Р»РѕРіР°.
 
 	v1.0 [27.03.2019]
-* Релиз.]]
+* Р РµР»РёР·.]]
 --require
 do
   -- This is your secret 67-bit key (any random bits are OK)
@@ -139,12 +139,12 @@ do
       waiter = true
       local prefix = "[SMES]: "
       local color = 0xffa500
-      sampAddChatMessage(prefix.."Модуль Dear ImGui загружен неудачно. Для работы скрипта этот модуль обязателен.", color)
-      sampAddChatMessage(prefix.."Средство автоматического исправления ошибок может попробовать скачать модуль за вас.", color)
-      sampAddChatMessage(prefix.."Нажмите F2, чтобы запустить средство автоматического исправления ошибок.", color)
+      sampAddChatMessage(prefix.."РњРѕРґСѓР»СЊ Dear ImGui Р·Р°РіСЂСѓР¶РµРЅ РЅРµСѓРґР°С‡РЅРѕ. Р”Р»СЏ СЂР°Р±РѕС‚С‹ СЃРєСЂРёРїС‚Р° СЌС‚РѕС‚ РјРѕРґСѓР»СЊ РѕР±СЏР·Р°С‚РµР»РµРЅ.", color)
+      sampAddChatMessage(prefix.."РЎСЂРµРґСЃС‚РІРѕ Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєРѕРіРѕ РёСЃРїСЂР°РІР»РµРЅРёСЏ РѕС€РёР±РѕРє РјРѕР¶РµС‚ РїРѕРїСЂРѕР±РѕРІР°С‚СЊ СЃРєР°С‡Р°С‚СЊ РјРѕРґСѓР»СЊ Р·Р° РІР°СЃ.", color)
+      sampAddChatMessage(prefix.."РќР°Р¶РјРёС‚Рµ F2, С‡С‚РѕР±С‹ Р·Р°РїСѓСЃС‚РёС‚СЊ СЃСЂРµРґСЃС‚РІРѕ Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєРѕРіРѕ РёСЃРїСЂР°РІР»РµРЅРёСЏ РѕС€РёР±РѕРє.", color)
       while not wasKeyPressed(113) do wait(10) end
       if wasKeyPressed(113) then
-        sampAddChatMessage(prefix.."Запускаю средство автоматического исправления ошибок.", color)
+        sampAddChatMessage(prefix.."Р—Р°РїСѓСЃРєР°СЋ СЃСЂРµРґСЃС‚РІРѕ Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєРѕРіРѕ РёСЃРїСЂР°РІР»РµРЅРёСЏ РѕС€РёР±РѕРє.", color)
         local imguifiles = {
           [getGameDirectory().."\\moonloader\\lib\\imgui.lua"] = "https://raw.githubusercontent.com/qrlk/smes/master/lib/imgui.lua",
           [getGameDirectory().."\\moonloader\\lib\\MoonImGui.dll"] = "https://github.com/qrlk/smes/raw/master/lib/MoonImGui.dll"
@@ -152,36 +152,36 @@ do
         createDirectory(getGameDirectory().."\\moonloader\\lib\\")
         for k, v in pairs(imguifiles) do
           if doesFileExist(k) then
-            sampAddChatMessage(prefix.."Файл "..k.." найден.", color)
-            sampAddChatMessage(prefix.."Удаляю "..k.." и скачиваю последнюю доступную версию.", color)
+            sampAddChatMessage(prefix.."Р¤Р°Р№Р» "..k.." РЅР°Р№РґРµРЅ.", color)
+            sampAddChatMessage(prefix.."РЈРґР°Р»СЏСЋ "..k.." Рё СЃРєР°С‡РёРІР°СЋ РїРѕСЃР»РµРґРЅСЋСЋ РґРѕСЃС‚СѓРїРЅСѓСЋ РІРµСЂСЃРёСЋ.", color)
             os.remove(k)
           else
-            sampAddChatMessage(prefix.."Файл "..k.." не найден.", color)
+            sampAddChatMessage(prefix.."Р¤Р°Р№Р» "..k.." РЅРµ РЅР°Р№РґРµРЅ.", color)
           end
-          sampAddChatMessage(prefix.."Ссылка: "..v..". Пробую скачать.", color)
+          sampAddChatMessage(prefix.."РЎСЃС‹Р»РєР°: "..v..". РџСЂРѕР±СѓСЋ СЃРєР°С‡Р°С‚СЊ.", color)
           pass = false
           wait(1500)
           downloadUrlToFile(v, k,
             function(id, status, p1, p2)
               if status == 5 then
-                sampAddChatMessage(string.format(prefix..k..' - Загружено %d KB из %d KB.', p1 / 1000, p2 / 1000), color)
+                sampAddChatMessage(string.format(prefix..k..' - Р—Р°РіСЂСѓР¶РµРЅРѕ %d KB РёР· %d KB.', p1 / 1000, p2 / 1000), color)
               elseif status == 58 then
-                sampAddChatMessage(prefix..k..' - Загрузка завершена.', color)
+                sampAddChatMessage(prefix..k..' - Р—Р°РіСЂСѓР·РєР° Р·Р°РІРµСЂС€РµРЅР°.', color)
                 pass = true
               end
             end
           )
           while pass == false do wait(1) end
         end
-        sampAddChatMessage(prefix.."Кажется, все файлы загружены. Попробую запустить модуль Dear ImGui ещё раз.", color)
+        sampAddChatMessage(prefix.."РљР°Р¶РµС‚СЃСЏ, РІСЃРµ С„Р°Р№Р»С‹ Р·Р°РіСЂСѓР¶РµРЅС‹. РџРѕРїСЂРѕР±СѓСЋ Р·Р°РїСѓСЃС‚РёС‚СЊ РјРѕРґСѓР»СЊ Dear ImGui РµС‰С‘ СЂР°Р·.", color)
         local status, err = pcall(function() imgui = require 'imgui' end)
         if status then
-          sampAddChatMessage(prefix.."Модуль Dear ImGui успешно загружен!", color)
+          sampAddChatMessage(prefix.."РњРѕРґСѓР»СЊ Dear ImGui СѓСЃРїРµС€РЅРѕ Р·Р°РіСЂСѓР¶РµРЅ!", color)
           waiter = false
           waitforreload = true
         else
-          sampAddChatMessage(prefix.."Модуль Dear ImGui загружен неудачно!", color)
-          sampAddChatMessage(prefix.."Обратитесь в поддержку скрипта (vk.me/qrlk.mods), приложив файл moonloader.log", color)
+          sampAddChatMessage(prefix.."РњРѕРґСѓР»СЊ Dear ImGui Р·Р°РіСЂСѓР¶РµРЅ РЅРµСѓРґР°С‡РЅРѕ!", color)
+          sampAddChatMessage(prefix.."РћР±СЂР°С‚РёС‚РµСЃСЊ РІ РїРѕРґРґРµСЂР¶РєСѓ СЃРєСЂРёРїС‚Р° (vk.me/qrlk.mods), РїСЂРёР»РѕР¶РёРІ С„Р°Р№Р» moonloader.log", color)
           print(err)
           for k, v in pairs(imguifiles) do
             print(k.." - "..tostring(doesFileExist(k)).." from "..v)
@@ -198,12 +198,12 @@ do
       waiter = true
       local prefix = "[SMES]: "
       local color = 0xffa500
-      sampAddChatMessage(prefix.."Модуль SAMP.Lua загружен неудачно. Для работы скрипта этот модуль обязателен.", color)
-      sampAddChatMessage(prefix.."Средство автоматического исправления ошибок может попробовать скачать модуль за вас.", color)
-      sampAddChatMessage(prefix.."Нажмите F2, чтобы запустить средство автоматического исправления ошибок.", color)
+      sampAddChatMessage(prefix.."РњРѕРґСѓР»СЊ SAMP.Lua Р·Р°РіСЂСѓР¶РµРЅ РЅРµСѓРґР°С‡РЅРѕ. Р”Р»СЏ СЂР°Р±РѕС‚С‹ СЃРєСЂРёРїС‚Р° СЌС‚РѕС‚ РјРѕРґСѓР»СЊ РѕР±СЏР·Р°С‚РµР»РµРЅ.", color)
+      sampAddChatMessage(prefix.."РЎСЂРµРґСЃС‚РІРѕ Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєРѕРіРѕ РёСЃРїСЂР°РІР»РµРЅРёСЏ РѕС€РёР±РѕРє РјРѕР¶РµС‚ РїРѕРїСЂРѕР±РѕРІР°С‚СЊ СЃРєР°С‡Р°С‚СЊ РјРѕРґСѓР»СЊ Р·Р° РІР°СЃ.", color)
+      sampAddChatMessage(prefix.."РќР°Р¶РјРёС‚Рµ F2, С‡С‚РѕР±С‹ Р·Р°РїСѓСЃС‚РёС‚СЊ СЃСЂРµРґСЃС‚РІРѕ Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєРѕРіРѕ РёСЃРїСЂР°РІР»РµРЅРёСЏ РѕС€РёР±РѕРє.", color)
       while not wasKeyPressed(113) do wait(10) end
       if wasKeyPressed(113) then
-        sampAddChatMessage(prefix.."Запускаю средство автоматического исправления ошибок.", color)
+        sampAddChatMessage(prefix.."Р—Р°РїСѓСЃРєР°СЋ СЃСЂРµРґСЃС‚РІРѕ Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєРѕРіРѕ РёСЃРїСЂР°РІР»РµРЅРёСЏ РѕС€РёР±РѕРє.", color)
         local sampluafiles = {
           [getGameDirectory().."\\moonloader\\lib\\samp\\events.lua"] = "https://raw.githubusercontent.com/THE-FYP/SAMP.Lua/master/samp/events.lua",
           [getGameDirectory().."\\moonloader\\lib\\samp\\raknet.lua"] = "https://raw.githubusercontent.com/THE-FYP/SAMP.Lua/master/samp/raknet.lua",
@@ -218,36 +218,36 @@ do
         createDirectory(getGameDirectory().."\\moonloader\\lib\\samp\\events")
         for k, v in pairs(sampluafiles) do
           if doesFileExist(k) then
-            sampAddChatMessage(prefix.."Файл "..k.." найден.", color)
-            sampAddChatMessage(prefix.."Удаляю "..k.." и скачиваю последнюю доступную версию.", color)
+            sampAddChatMessage(prefix.."Р¤Р°Р№Р» "..k.." РЅР°Р№РґРµРЅ.", color)
+            sampAddChatMessage(prefix.."РЈРґР°Р»СЏСЋ "..k.." Рё СЃРєР°С‡РёРІР°СЋ РїРѕСЃР»РµРґРЅСЋСЋ РґРѕСЃС‚СѓРїРЅСѓСЋ РІРµСЂСЃРёСЋ.", color)
             os.remove(k)
           else
-            sampAddChatMessage(prefix.."Файл "..k.." не найден.", color)
+            sampAddChatMessage(prefix.."Р¤Р°Р№Р» "..k.." РЅРµ РЅР°Р№РґРµРЅ.", color)
           end
-          sampAddChatMessage(prefix.."Ссылка: "..v..". Пробую скачать.", color)
+          sampAddChatMessage(prefix.."РЎСЃС‹Р»РєР°: "..v..". РџСЂРѕР±СѓСЋ СЃРєР°С‡Р°С‚СЊ.", color)
           pass = false
           wait(1500)
           downloadUrlToFile(v, k,
             function(id, status, p1, p2)
               if status == 5 then
-                sampAddChatMessage(string.format(prefix..k..' - Загружено %d KB из %d KB.', p1 / 1000, p2 / 1000), color)
+                sampAddChatMessage(string.format(prefix..k..' - Р—Р°РіСЂСѓР¶РµРЅРѕ %d KB РёР· %d KB.', p1 / 1000, p2 / 1000), color)
               elseif status == 58 then
-                sampAddChatMessage(prefix..k..' - Загрузка завершена.', color)
+                sampAddChatMessage(prefix..k..' - Р—Р°РіСЂСѓР·РєР° Р·Р°РІРµСЂС€РµРЅР°.', color)
                 pass = true
               end
             end
           )
           while pass == false do wait(1) end
         end
-        sampAddChatMessage(prefix.."Кажется, все файлы загружены. Попробую запустить модуль SAMP.Lua ещё раз.", color)
+        sampAddChatMessage(prefix.."РљР°Р¶РµС‚СЃСЏ, РІСЃРµ С„Р°Р№Р»С‹ Р·Р°РіСЂСѓР¶РµРЅС‹. РџРѕРїСЂРѕР±СѓСЋ Р·Р°РїСѓСЃС‚РёС‚СЊ РјРѕРґСѓР»СЊ SAMP.Lua РµС‰С‘ СЂР°Р·.", color)
         local status1, err = pcall(function() RPC = require 'lib.samp.events' end)
         if status1 then
-          sampAddChatMessage(prefix.."Модуль SAMP.Lua успешно загружен!", color)
+          sampAddChatMessage(prefix.."РњРѕРґСѓР»СЊ SAMP.Lua СѓСЃРїРµС€РЅРѕ Р·Р°РіСЂСѓР¶РµРЅ!", color)
           waiter = false
           waitforreload = true
         else
-          sampAddChatMessage(prefix.."Модуль SAMP.Lua загружен неудачно!", color)
-          sampAddChatMessage(prefix.."Обратитесь в поддержку скрипта (vk.me/qrlk.mods), приложив файл moonloader.log", color)
+          sampAddChatMessage(prefix.."РњРѕРґСѓР»СЊ SAMP.Lua Р·Р°РіСЂСѓР¶РµРЅ РЅРµСѓРґР°С‡РЅРѕ!", color)
+          sampAddChatMessage(prefix.."РћР±СЂР°С‚РёС‚РµСЃСЊ РІ РїРѕРґРґРµСЂР¶РєСѓ СЃРєСЂРёРїС‚Р° (vk.me/qrlk.mods), РїСЂРёР»РѕР¶РёРІ С„Р°Р№Р» moonloader.log", color)
           print(err)
           for k, v in pairs(sampluafiles) do
             print(k.." - "..tostring(doesFileExist(k)).." from "..v)
@@ -278,8 +278,8 @@ do
     if kols > 0 then
       local prefix = "[SMES]: "
       local color = 0xffa500
-      sampAddChatMessage(prefix.."Для работы скрипта нужно докачать "..kols.." аудиофайлов.", color)
-      sampAddChatMessage(prefix.."Нажмите F2, чтобы запустить скачивание аудиофайлов.", color)
+      sampAddChatMessage(prefix.."Р”Р»СЏ СЂР°Р±РѕС‚С‹ СЃРєСЂРёРїС‚Р° РЅСѓР¶РЅРѕ РґРѕРєР°С‡Р°С‚СЊ "..kols.." Р°СѓРґРёРѕС„Р°Р№Р»РѕРІ.", color)
+      sampAddChatMessage(prefix.."РќР°Р¶РјРёС‚Рµ F2, С‡С‚РѕР±С‹ Р·Р°РїСѓСЃС‚РёС‚СЊ СЃРєР°С‡РёРІР°РЅРёРµ Р°СѓРґРёРѕС„Р°Р№Р»РѕРІ.", color)
       while not wasKeyPressed(113) do wait(10) end
       if wasKeyPressed(113) then
         for i = 1, currentaudiokolDD do
@@ -293,9 +293,9 @@ do
             downloadUrlToFile(v, k,
               function(id, status, p1, p2)
                 if status == 5 then
-                  sampAddChatMessage(string.format(prefix..k..' - Загружено %d KB из %d KB.', p1 / 1000, p2 / 1000), color)
+                  sampAddChatMessage(string.format(prefix..k..' - Р—Р°РіСЂСѓР¶РµРЅРѕ %d KB РёР· %d KB.', p1 / 1000, p2 / 1000), color)
                 elseif status == 58 then
-                  sampAddChatMessage(prefix..k..' - Загрузка завершена.', color)
+                  sampAddChatMessage(prefix..k..' - Р—Р°РіСЂСѓР·РєР° Р·Р°РІРµСЂС€РµРЅР°.', color)
                   pass = true
                 end
               end
@@ -680,13 +680,13 @@ function var_require()
   if getMoonloaderVersion() < 026 then
     local prefix = "[SMES]: "
     local color = 0xffa500
-    sampAddChatMessage(prefix.."Ваша версия MoonLoader не поддерживается.", color)
-    sampAddChatMessage("Пожалуйста, скачайте последнюю версию MoonLoader.", color)
+    sampAddChatMessage(prefix.."Р’Р°С€Р° РІРµСЂСЃРёСЏ MoonLoader РЅРµ РїРѕРґРґРµСЂР¶РёРІР°РµС‚СЃСЏ.", color)
+    sampAddChatMessage("РџРѕР¶Р°Р»СѓР№СЃС‚Р°, СЃРєР°С‡Р°Р№С‚Рµ РїРѕСЃР»РµРґРЅСЋСЋ РІРµСЂСЃРёСЋ MoonLoader.", color)
     thisScript():unload()
   end
   chkupd()
   if getmode(sampGetCurrentServerAddress()) == nil then
-    print('сервер не поддерживается, завершаю работу')
+    print('СЃРµСЂРІРµСЂ РЅРµ РїРѕРґРґРµСЂР¶РёРІР°РµС‚СЃСЏ, Р·Р°РІРµСЂС€Р°СЋ СЂР°Р±РѕС‚Сѓ')
     thisScript():unload()
   end
   r_smart_lib_imgui()
@@ -695,7 +695,7 @@ function var_require()
   wait(2500)
   while not sampIsLocalPlayerSpawned() do wait(1) end
   if getmode(sampGetCurrentServerAddress()) == nil then
-    print('сервер не поддерживается, завершаю работу')
+    print('СЃРµСЂРІРµСЂ РЅРµ РїРѕРґРґРµСЂР¶РёРІР°РµС‚СЃСЏ, Р·Р°РІРµСЂС€Р°СЋ СЂР°Р±РѕС‚Сѓ')
     thisScript():unload()
   end
   nokey()
@@ -812,25 +812,25 @@ end
 function goupdate()
   local color = -1
   local prefix = "[SMES]: "
-  sampAddChatMessage((prefix..'Обнаружено обновление. Пытаюсь обновиться c '..thisScript().version..' на '..updateversion), color)
+  sampAddChatMessage((prefix..'РћР±РЅР°СЂСѓР¶РµРЅРѕ РѕР±РЅРѕРІР»РµРЅРёРµ. РџС‹С‚Р°СЋСЃСЊ РѕР±РЅРѕРІРёС‚СЊСЃСЏ c '..thisScript().version..' РЅР° '..updateversion), color)
   wait(250)
   downloadUrlToFile(updatelink, thisScript().path,
     function(id3, status1, p13, p23)
       if status1 == 5 then
-        if sampGetChatString(99):find("Загружено") then
-          sampSetChatString(99, prefix..string.format('Загружено %d KB из %d KB.', p13 / 1000, p23 / 1000), nil, - 1)
+        if sampGetChatString(99):find("Р—Р°РіСЂСѓР¶РµРЅРѕ") then
+          sampSetChatString(99, prefix..string.format('Р—Р°РіСЂСѓР¶РµРЅРѕ %d KB РёР· %d KB.', p13 / 1000, p23 / 1000), nil, - 1)
         else
-          sampAddChatMessage(prefix..string.format('Загружено %d KB из %d KB.', p13 / 1000, p23 / 1000), color)
+          sampAddChatMessage(prefix..string.format('Р—Р°РіСЂСѓР¶РµРЅРѕ %d KB РёР· %d KB.', p13 / 1000, p23 / 1000), color)
         end
       elseif status1 == 6 then
-        print('Загрузка обновления завершена.')
-        sampAddChatMessage((prefix..'Обновление завершено! Подробнее в changelog (/smes -> SETTINGS -> О скрипте -> changelog).'), color)
+        print('Р—Р°РіСЂСѓР·РєР° РѕР±РЅРѕРІР»РµРЅРёСЏ Р·Р°РІРµСЂС€РµРЅР°.')
+        sampAddChatMessage((prefix..'РћР±РЅРѕРІР»РµРЅРёРµ Р·Р°РІРµСЂС€РµРЅРѕ! РџРѕРґСЂРѕР±РЅРµРµ РІ changelog (/smes -> SETTINGS -> Рћ СЃРєСЂРёРїС‚Рµ -> changelog).'), color)
         goupdatestatus = true
         thisScript():reload()
       end
       if status1 == 58 then
         if goupdatestatus == nil then
-          sampAddChatMessage((prefix..'Обновление прошло неудачно. Обратитесь в поддержку.'), color)
+          sampAddChatMessage((prefix..'РћР±РЅРѕРІР»РµРЅРёРµ РїСЂРѕС€Р»Рѕ РЅРµСѓРґР°С‡РЅРѕ. РћР±СЂР°С‚РёС‚РµСЃСЊ РІ РїРѕРґРґРµСЂР¶РєСѓ.'), color)
           thisScript():unload()
         end
       end
@@ -968,7 +968,7 @@ function var_main()
   hotke = {}
   smsafk = {}
   russian_characters = {
-    [168] = 'Ё', [184] = 'ё', [192] = 'А', [193] = 'Б', [194] = 'В', [195] = 'Г', [196] = 'Д', [197] = 'Е', [198] = 'Ж', [199] = 'З', [200] = 'И', [201] = 'Й', [202] = 'К', [203] = 'Л', [204] = 'М', [205] = 'Н', [206] = 'О', [207] = 'П', [208] = 'Р', [209] = 'С', [210] = 'Т', [211] = 'У', [212] = 'Ф', [213] = 'Х', [214] = 'Ц', [215] = 'Ч', [216] = 'Ш', [217] = 'Щ', [218] = 'Ъ', [219] = 'Ы', [220] = 'Ь', [221] = 'Э', [222] = 'Ю', [223] = 'Я', [224] = 'а', [225] = 'б', [226] = 'в', [227] = 'г', [228] = 'д', [229] = 'е', [230] = 'ж', [231] = 'з', [232] = 'и', [233] = 'й', [234] = 'к', [235] = 'л', [236] = 'м', [237] = 'н', [238] = 'о', [239] = 'п', [240] = 'р', [241] = 'с', [242] = 'т', [243] = 'у', [244] = 'ф', [245] = 'х', [246] = 'ц', [247] = 'ч', [248] = 'ш', [249] = 'щ', [250] = 'ъ', [251] = 'ы', [252] = 'ь', [253] = 'э', [254] = 'ю', [255] = 'я',
+    [168] = 'РЃ', [184] = 'С‘', [192] = 'Рђ', [193] = 'Р‘', [194] = 'Р’', [195] = 'Р“', [196] = 'Р”', [197] = 'Р•', [198] = 'Р–', [199] = 'Р—', [200] = 'Р', [201] = 'Р™', [202] = 'Рљ', [203] = 'Р›', [204] = 'Рњ', [205] = 'Рќ', [206] = 'Рћ', [207] = 'Рџ', [208] = 'Р ', [209] = 'РЎ', [210] = 'Рў', [211] = 'РЈ', [212] = 'Р¤', [213] = 'РҐ', [214] = 'Р¦', [215] = 'Р§', [216] = 'РЁ', [217] = 'Р©', [218] = 'РЄ', [219] = 'Р«', [220] = 'Р¬', [221] = 'Р­', [222] = 'Р®', [223] = 'РЇ', [224] = 'Р°', [225] = 'Р±', [226] = 'РІ', [227] = 'Рі', [228] = 'Рґ', [229] = 'Рµ', [230] = 'Р¶', [231] = 'Р·', [232] = 'Рё', [233] = 'Р№', [234] = 'Рє', [235] = 'Р»', [236] = 'Рј', [237] = 'РЅ', [238] = 'Рѕ', [239] = 'Рї', [240] = 'СЂ', [241] = 'СЃ', [242] = 'С‚', [243] = 'Сѓ', [244] = 'С„', [245] = 'С…', [246] = 'С†', [247] = 'С‡', [248] = 'С€', [249] = 'С‰', [250] = 'СЉ', [251] = 'С‹', [252] = 'СЊ', [253] = 'СЌ', [254] = 'СЋ', [255] = 'СЏ',
   }
   file = getGameDirectory()..'\\moonloader\\resource\\smes\\suplog.csv'
   color = 0xffa500
@@ -1059,16 +1059,16 @@ function main()
             selecteddialogSMS = "qrlk"
             math.randomseed(os.time())
             --[[for i = 1, 1000 do
-              --RPC.onServerMessage(-1, " SMS: Тестовое сообщения для проблемы BBB. Отправитель: qrlk[16]")
-							RPC.onServerMessage(-1, " SMS: Привет. Получатель: qrlk[16]")
-              RPC.onServerMessage(-1, " SMS: Привет. Отправитель: qrlk[16]")
-              RPC.onServerMessage(-1, " SMS: Я пажилая струя. Получатель: qrlk[16]")
-              RPC.onServerMessage(-1, " SMS: Кто я пажилая струя?. Отправитель: qrlk[16]")
-              RPC.onServerMessage(-1, " SMS: Да ты!. Получатель: qrlk[16]")
-              RPC.onServerMessage(-1, " SMS: А, ну тогда давай!. Отправитель: qrlk[16]")
+              --RPC.onServerMessage(-1, " SMS: РўРµСЃС‚РѕРІРѕРµ СЃРѕРѕР±С‰РµРЅРёСЏ РґР»СЏ РїСЂРѕР±Р»РµРјС‹ BBB. РћС‚РїСЂР°РІРёС‚РµР»СЊ: qrlk[16]")
+							RPC.onServerMessage(-1, " SMS: РџСЂРёРІРµС‚. РџРѕР»СѓС‡Р°С‚РµР»СЊ: qrlk[16]")
+              RPC.onServerMessage(-1, " SMS: РџСЂРёРІРµС‚. РћС‚РїСЂР°РІРёС‚РµР»СЊ: qrlk[16]")
+              RPC.onServerMessage(-1, " SMS: РЇ РїР°Р¶РёР»Р°СЏ СЃС‚СЂСѓСЏ. РџРѕР»СѓС‡Р°С‚РµР»СЊ: qrlk[16]")
+              RPC.onServerMessage(-1, " SMS: РљС‚Рѕ СЏ РїР°Р¶РёР»Р°СЏ СЃС‚СЂСѓСЏ?. РћС‚РїСЂР°РІРёС‚РµР»СЊ: qrlk[16]")
+              RPC.onServerMessage(-1, " SMS: Р”Р° С‚С‹!. РџРѕР»СѓС‡Р°С‚РµР»СЊ: qrlk[16]")
+              RPC.onServerMessage(-1, " SMS: Рђ, РЅСѓ С‚РѕРіРґР° РґР°РІР°Р№!. РћС‚РїСЂР°РІРёС‚РµР»СЊ: qrlk[16]")
             end]]
             for i = 1, 50 do
-              RPC.onServerMessage(-1, " SMS: Привет. Получатель: qrlk"..math.random(1, 3000).."[16]")
+              RPC.onServerMessage(-1, " SMS: РџСЂРёРІРµС‚. РџРѕР»СѓС‡Р°С‚РµР»СЊ: qrlk"..math.random(1, 3000).."[16]")
             end
           end
         )
@@ -1198,7 +1198,7 @@ end
 
 function main_copyright()
   local prefix = "[SMES]: "
-  if PREMIUM then sampAddChatMessage(prefix.."Все системы готовы. Версия скрипта: "..thisScript().version..". Активация: /smes. Приятной игры, "..licensenick..".", 0xffa500) end
+  if PREMIUM then sampAddChatMessage(prefix.."Р’СЃРµ СЃРёСЃС‚РµРјС‹ РіРѕС‚РѕРІС‹. Р’РµСЂСЃРёСЏ СЃРєСЂРёРїС‚Р°: "..thisScript().version..". РђРєС‚РёРІР°С†РёСЏ: /smes. РџСЂРёСЏС‚РЅРѕР№ РёРіСЂС‹, "..licensenick..".", 0xffa500) end
 end
 
 function main_while_playsounds()
@@ -1296,7 +1296,7 @@ function mode_samprp()
     if text:find("SMS") then
       text = string.gsub(text, "{FFFF00}", "")
       text = string.gsub(text, "{FF8000}", "")
-      local smsText, smsNick, smsId = string.match(text, "^ SMS%: (.*)%. Отправитель%: (.*)%[(%d+)%]")
+      local smsText, smsNick, smsId = string.match(text, "^ SMS%: (.*)%. РћС‚РїСЂР°РІРёС‚РµР»СЊ%: (.*)%[(%d+)%]")
       if smsText and smsNick and smsId then
         LASTID_SMS = smsId
         LASTNICK_SMS = smsNick
@@ -1324,7 +1324,7 @@ function mode_samprp()
           return false
         end
       end
-      local smsText, smsNick, smsId = string.match(text, "^ SMS%: (.*)%. Получатель%: (.*)%[(%d+)%]")
+      local smsText, smsNick, smsId = string.match(text, "^ SMS%: (.*)%. РџРѕР»СѓС‡Р°С‚РµР»СЊ%: (.*)%[(%d+)%]")
       if smsText and smsNick and smsId then
         LASTID_SMS = smsId
         LASTNICK_SMS = smsNick
@@ -1358,7 +1358,7 @@ function mode_samprp()
         end
       end
     end
-    if text == " Сообщение доставлено" then
+    if text == " РЎРѕРѕР±С‰РµРЅРёРµ РґРѕСЃС‚Р°РІР»РµРЅРѕ" then
       if iHideSmsReceived.v then return false end
       if not iHideSmsReceived.v then
         if iReplaceSmsReceivedColor.v then
@@ -1391,7 +1391,7 @@ function mode_samprp()
     else
       if isPlayerControlLocked() then lockPlayerControl(false) end
     end
-    if imgui.SameLine() or imgui.Button(u8"Отправить") then
+    if imgui.SameLine() or imgui.Button(u8"РћС‚РїСЂР°РІРёС‚СЊ") then
       for i = 0, sampGetMaxPlayerId() do
         if sampIsPlayerConnected(i) and sampGetPlayerNickname(i) == selecteddialogSMS then k = i break end
         if i == sampGetMaxPlayerId() then k = "-" end
@@ -1434,9 +1434,9 @@ function mode_samprp()
     end
     imgui.SameLine()
     if iHideSmsReceived.v then
-      imgui.Text(u8("Скрывать \"Сообщение доставлено\"?"))
+      imgui.Text(u8("РЎРєСЂС‹РІР°С‚СЊ \"РЎРѕРѕР±С‰РµРЅРёРµ РґРѕСЃС‚Р°РІР»РµРЅРѕ\"?"))
     else
-      imgui.TextDisabled(u8"Скрывать \"Сообщение доставлено\"?")
+      imgui.TextDisabled(u8"РЎРєСЂС‹РІР°С‚СЊ \"РЎРѕРѕР±С‰РµРЅРёРµ РґРѕСЃС‚Р°РІР»РµРЅРѕ\"?")
     end
   end
   function changesmssent()
@@ -1447,7 +1447,7 @@ function mode_samprp()
       end
       imgui.SameLine()
       if iReplaceSmsReceivedColor.v then
-        imgui.Text(u8("Цвет \"SMS доставлено\" изменяется на: "))
+        imgui.Text(u8("Р¦РІРµС‚ \"SMS РґРѕСЃС‚Р°РІР»РµРЅРѕ\" РёР·РјРµРЅСЏРµС‚СЃСЏ РЅР°: "))
         imgui.SameLine(295)
         imgui.Text("")
         imgui.SameLine()
@@ -1458,7 +1458,7 @@ function mode_samprp()
           inicfg.save(cfg, "smes")
         end
       else
-        imgui.TextDisabled(u8"Изменять \"Сообщение доставлено\" в чате?")
+        imgui.TextDisabled(u8"РР·РјРµРЅСЏС‚СЊ \"РЎРѕРѕР±С‰РµРЅРёРµ РґРѕСЃС‚Р°РІР»РµРЅРѕ\" РІ С‡Р°С‚Рµ?")
       end
     end
   end
@@ -1480,7 +1480,7 @@ function mode_samprp()
               sms[sampGetPlayerNickname(i)]["Pinned"] = 0
               ikkk = 0
               iAddSMS = false
-              table.insert(sms[sampGetPlayerNickname(i)]["Chat"], {text = "Диалог создан", Nick = "мессенджер", type = "service", time = os.time()})
+              table.insert(sms[sampGetPlayerNickname(i)]["Chat"], {text = "Р”РёР°Р»РѕРі СЃРѕР·РґР°РЅ", Nick = "РјРµСЃСЃРµРЅРґР¶РµСЂ", type = "service", time = os.time()})
               selecteddialogSMS = sampGetPlayerNickname(i)
               SSDB_trigger = true
               ScrollToDialogSMS = true
@@ -1527,9 +1527,9 @@ function mode_samprp()
         end
       end
       if shId ~= nil and shId == "-" then
-        imgui.Text(u8:encode("[Оффлайн] Ник: "..tostring(selecteddialogSMS)..". Всего сообщений: "..tostring(#sms[selecteddialogSMS]["Chat"]).."."))
+        imgui.Text(u8:encode("[РћС„С„Р»Р°Р№РЅ] РќРёРє: "..tostring(selecteddialogSMS)..". Р’СЃРµРіРѕ СЃРѕРѕР±С‰РµРЅРёР№: "..tostring(#sms[selecteddialogSMS]["Chat"]).."."))
       else
-        imgui.Text(u8:encode("[Онлайн] Ник: "..tostring(selecteddialogSMS)..". ID: "..tostring(shId)..". LVL: "..tostring(sampGetPlayerScore(tonumber(shId)))..". Всего сообщений: "..tostring(#sms[selecteddialogSMS]["Chat"]).."."))
+        imgui.Text(u8:encode("[РћРЅР»Р°Р№РЅ] РќРёРє: "..tostring(selecteddialogSMS)..". ID: "..tostring(shId)..". LVL: "..tostring(sampGetPlayerScore(tonumber(shId)))..". Р’СЃРµРіРѕ СЃРѕРѕР±С‰РµРЅРёР№: "..tostring(#sms[selecteddialogSMS]["Chat"]).."."))
         getafkbutton()
       end
     end
@@ -1545,12 +1545,12 @@ function mode_evolverp()
   end
 
   function RPC.onServerMessage(color, text)
-    if text:find("SMS") and not string.find(text, "Малевич$") then
+    if text:find("SMS") and not string.find(text, "РњР°Р»РµРІРёС‡$") then
       text = string.gsub(text, "{FFFF00}", "")
       text = string.gsub(text, "{FF8000}", "")
-      local smsText, smsNick, smsId = string.match(text, "^ SMS%: (.*)%.% Отправитель%: (.*)%[(%d+)%]")
-			if not string.match(text, "^ SMS%: (.*)%.% Отправитель%: (.*)%[(%d+)%]") then
-				smsText, smsNick, smsId = string.match(text, "^ SMS%: (.*)% Отправитель%: (.*)%[(%d+)%]")
+      local smsText, smsNick, smsId = string.match(text, "^ SMS%: (.*)%.% РћС‚РїСЂР°РІРёС‚РµР»СЊ%: (.*)%[(%d+)%]")
+			if not string.match(text, "^ SMS%: (.*)%.% РћС‚РїСЂР°РІРёС‚РµР»СЊ%: (.*)%[(%d+)%]") then
+				smsText, smsNick, smsId = string.match(text, "^ SMS%: (.*)% РћС‚РїСЂР°РІРёС‚РµР»СЊ%: (.*)%[(%d+)%]")
 			end
       if smsText and smsNick and smsId then
         LASTID_SMS = smsId
@@ -1579,9 +1579,9 @@ function mode_evolverp()
           return false
         end
       end
-      local smsText, smsNick, smsId = string.match(text, "^ SMS%: (.*)%.% Получатель%: (.*)%[(%d+)%]")
-			if not string.match(text, "^ SMS%: (.*)%.% Получатель%: (.*)%[(%d+)%]") then
-				smsText, smsNick, smsId = string.match(text, "^ SMS%: (.*)% Получатель%: (.*)%[(%d+)%]")
+      local smsText, smsNick, smsId = string.match(text, "^ SMS%: (.*)%.% РџРѕР»СѓС‡Р°С‚РµР»СЊ%: (.*)%[(%d+)%]")
+			if not string.match(text, "^ SMS%: (.*)%.% РџРѕР»СѓС‡Р°С‚РµР»СЊ%: (.*)%[(%d+)%]") then
+				smsText, smsNick, smsId = string.match(text, "^ SMS%: (.*)% РџРѕР»СѓС‡Р°С‚РµР»СЊ%: (.*)%[(%d+)%]")
 			end
       if smsText and smsNick and smsId then
         LASTID_SMS = smsId
@@ -1616,7 +1616,7 @@ function mode_evolverp()
         end
       end
     end
-    if text == " Сообщение доставлено" or text == "- Сообщение доставлено" then
+    if text == " РЎРѕРѕР±С‰РµРЅРёРµ РґРѕСЃС‚Р°РІР»РµРЅРѕ" or text == "- РЎРѕРѕР±С‰РµРЅРёРµ РґРѕСЃС‚Р°РІР»РµРЅРѕ" then
       if iHideSmsReceived.v then return false end
       if not iHideSmsReceived.v then
         if iReplaceSmsReceivedColor.v then
@@ -1630,7 +1630,7 @@ function mode_evolverp()
       end
     end
     _213, myid = sampGetPlayerIdByCharHandle(PLAYER_PED)
-    if iHideSmsOut.v and text == " "..sampGetPlayerNickname(myid).." достает мобильник" then return false end
+    if iHideSmsOut.v and text == " "..sampGetPlayerNickname(myid).." РґРѕСЃС‚Р°РµС‚ РјРѕР±РёР»СЊРЅРёРє" then return false end
 
   end
 
@@ -1653,7 +1653,7 @@ function mode_evolverp()
     else
       if isPlayerControlLocked() then lockPlayerControl(false) end
     end
-    if imgui.SameLine() or imgui.Button(u8"Отправить") then
+    if imgui.SameLine() or imgui.Button(u8"РћС‚РїСЂР°РІРёС‚СЊ") then
       for i = 0, sampGetMaxPlayerId() do
         if sampIsPlayerConnected(i) and sampGetPlayerNickname(i) == selecteddialogSMS then k = i break end
         if i == sampGetMaxPlayerId() then k = "-" end
@@ -1674,9 +1674,9 @@ function mode_evolverp()
     end
     imgui.SameLine()
     if iHideSmsReceived.v then
-      imgui.Text(u8("Скрывать \"Сообщение доставлено\"?"))
+      imgui.Text(u8("РЎРєСЂС‹РІР°С‚СЊ \"РЎРѕРѕР±С‰РµРЅРёРµ РґРѕСЃС‚Р°РІР»РµРЅРѕ\"?"))
     else
-      imgui.TextDisabled(u8"Скрывать \"Сообщение доставлено\"?")
+      imgui.TextDisabled(u8"РЎРєСЂС‹РІР°С‚СЊ \"РЎРѕРѕР±С‰РµРЅРёРµ РґРѕСЃС‚Р°РІР»РµРЅРѕ\"?")
     end
   end
   function changesmssent()
@@ -1687,7 +1687,7 @@ function mode_evolverp()
       end
       imgui.SameLine()
       if iReplaceSmsReceivedColor.v then
-        imgui.Text(u8("Цвет \"SMS доставлено\" изменяется на: "))
+        imgui.Text(u8("Р¦РІРµС‚ \"SMS РґРѕСЃС‚Р°РІР»РµРЅРѕ\" РёР·РјРµРЅСЏРµС‚СЃСЏ РЅР°: "))
         imgui.SameLine(295)
         imgui.Text("")
         imgui.SameLine()
@@ -1698,7 +1698,7 @@ function mode_evolverp()
           inicfg.save(cfg, "smes")
         end
       else
-        imgui.TextDisabled(u8"Изменять \"Сообщение доставлено\" в чате?")
+        imgui.TextDisabled(u8"РР·РјРµРЅСЏС‚СЊ \"РЎРѕРѕР±С‰РµРЅРёРµ РґРѕСЃС‚Р°РІР»РµРЅРѕ\" РІ С‡Р°С‚Рµ?")
       end
     end
   end
@@ -1720,7 +1720,7 @@ function mode_evolverp()
               sms[sampGetPlayerNickname(i)]["Pinned"] = 0
               ikkk = 0
               iAddSMS = false
-              table.insert(sms[sampGetPlayerNickname(i)]["Chat"], {text = "Диалог создан", Nick = "мессенджер", type = "service", time = os.time()})
+              table.insert(sms[sampGetPlayerNickname(i)]["Chat"], {text = "Р”РёР°Р»РѕРі СЃРѕР·РґР°РЅ", Nick = "РјРµСЃСЃРµРЅРґР¶РµСЂ", type = "service", time = os.time()})
               selecteddialogSMS = sampGetPlayerNickname(i)
               SSDB_trigger = true
               ScrollToDialogSMS = true
@@ -1767,9 +1767,9 @@ function mode_evolverp()
         end
       end
       if shId ~= nil and shId == "-" then
-        imgui.Text(u8:encode("[Оффлайн] Ник: "..tostring(selecteddialogSMS)..". Всего сообщений: "..tostring(#sms[selecteddialogSMS]["Chat"]).."."))
+        imgui.Text(u8:encode("[РћС„С„Р»Р°Р№РЅ] РќРёРє: "..tostring(selecteddialogSMS)..". Р’СЃРµРіРѕ СЃРѕРѕР±С‰РµРЅРёР№: "..tostring(#sms[selecteddialogSMS]["Chat"]).."."))
       else
-        imgui.Text(u8:encode("[Онлайн] Ник: "..tostring(selecteddialogSMS)..". ID: "..tostring(shId)..". LVL: "..tostring(sampGetPlayerScore(tonumber(shId)))..". Всего сообщений: "..tostring(#sms[selecteddialogSMS]["Chat"]).."."))
+        imgui.Text(u8:encode("[РћРЅР»Р°Р№РЅ] РќРёРє: "..tostring(selecteddialogSMS)..". ID: "..tostring(shId)..". LVL: "..tostring(sampGetPlayerScore(tonumber(shId)))..". Р’СЃРµРіРѕ СЃРѕРѕР±С‰РµРЅРёР№: "..tostring(#sms[selecteddialogSMS]["Chat"]).."."))
         getafkbutton()
       end
     end
@@ -1782,7 +1782,7 @@ function mode_advancerp()
     if text:find("SMS") then
       text = string.gsub(text, "{FFFF00}", "")
       text = string.gsub(text, "{FF8000}", "")
-      local smsText, smsNick, smsNumber = string.match(text, "SMS%: (.*)% %| Отправитель%: (.*) %[т.(%d+)%]")
+      local smsText, smsNick, smsNumber = string.match(text, "SMS%: (.*)% %| РћС‚РїСЂР°РІРёС‚РµР»СЊ%: (.*) %[С‚.(%d+)%]")
       if smsText and smsNick and smsNumber then
         smsId = 1001
         for i = 0, sampGetMaxPlayerId() + 1 do
@@ -1818,7 +1818,7 @@ function mode_advancerp()
           return false
         end
       end
-      local smsText, smsNick, smsNumber = string.match(text, "SMS%: (.*)% %| Получатель%: (.*) %[т.(%d+)%]")
+      local smsText, smsNick, smsNumber = string.match(text, "SMS%: (.*)% %| РџРѕР»СѓС‡Р°С‚РµР»СЊ%: (.*) %[С‚.(%d+)%]")
       if smsText and smsNick and smsNumber then
         smsId = 1001
         for i = 0, sampGetMaxPlayerId() + 1 do
@@ -1880,7 +1880,7 @@ function mode_advancerp()
     else
       if isPlayerControlLocked() then lockPlayerControl(false) end
     end
-    if imgui.SameLine() or imgui.Button(u8"Отправить") then
+    if imgui.SameLine() or imgui.Button(u8"РћС‚РїСЂР°РІРёС‚СЊ") then
       for i = 0, sampGetMaxPlayerId() do
         if sampIsPlayerConnected(i) and sampGetPlayerNickname(i) == selecteddialogSMS then k = i break end
         if i == sampGetMaxPlayerId() then k = "-" end
@@ -1913,7 +1913,7 @@ function mode_advancerp()
           function()
             wait(sampGetPlayerPing(myid) * 3)
             smsNick222 = nil
-            local smsText222, smsNick222, smsNumbe2r = string.match(sampGetChatString(99), "SMS%: (.*)% %| Получатель%: (.*) %[т.(%d+)%]")
+            local smsText222, smsNick222, smsNumbe2r = string.match(sampGetChatString(99), "SMS%: (.*)% %| РџРѕР»СѓС‡Р°С‚РµР»СЊ%: (.*) %[С‚.(%d+)%]")
             if smsNick222 then
               if sms[smsNick222] == nil then
                 sms[smsNick222] = {}
@@ -1922,7 +1922,7 @@ function mode_advancerp()
                 sms[smsNick222]["Pinned"] = 0
                 ikkk = 0
                 iAddSMS = false
-                table.insert(sms[smsNick222]["Chat"], {text = "Диалог создан", Nick = "мессенджер", type = "service", time = os.time()})
+                table.insert(sms[smsNick222]["Chat"], {text = "Р”РёР°Р»РѕРі СЃРѕР·РґР°РЅ", Nick = "РјРµСЃСЃРµРЅРґР¶РµСЂ", type = "service", time = os.time()})
                 selecteddialogSMS = smsNick222
                 SSDB_trigger = true
                 ScrollToDialogSMS = true
@@ -1947,7 +1947,7 @@ function mode_advancerp()
     end
     if KeyboardFocusResetForNewDialog then imgui.SetKeyboardFocusHere() fixforcarstop() KeyboardFocusResetForNewDialog = false end
     if iSMSAddDialog.v ~= "" then
-      imgui.SetTooltip(u8:encode("Введите номер и нажмите Enter"))
+      imgui.SetTooltip(u8:encode("Р’РІРµРґРёС‚Рµ РЅРѕРјРµСЂ Рё РЅР°Р¶РјРёС‚Рµ Enter"))
     end
   end
 
@@ -1964,9 +1964,9 @@ function mode_advancerp()
         end
       end
       if shId ~= nil and shId == "-" then
-        imgui.Text(u8:encode("[Оффлайн] Ник: "..tostring(selecteddialogSMS)..". Номер: "..sms[selecteddialogSMS]["Number"]..". Всего сообщений: "..tostring(#sms[selecteddialogSMS]["Chat"]).."."))
+        imgui.Text(u8:encode("[РћС„С„Р»Р°Р№РЅ] РќРёРє: "..tostring(selecteddialogSMS)..". РќРѕРјРµСЂ: "..sms[selecteddialogSMS]["Number"]..". Р’СЃРµРіРѕ СЃРѕРѕР±С‰РµРЅРёР№: "..tostring(#sms[selecteddialogSMS]["Chat"]).."."))
       else
-        imgui.Text(u8:encode("[Онлайн] Ник: "..tostring(selecteddialogSMS)..". ID: "..tostring(shId)..". LVL: "..tostring(sampGetPlayerScore(tonumber(shId)))..". Номер: "..sms[selecteddialogSMS]["Number"]..". Всего сообщений: "..tostring(#sms[selecteddialogSMS]["Chat"]).."."))
+        imgui.Text(u8:encode("[РћРЅР»Р°Р№РЅ] РќРёРє: "..tostring(selecteddialogSMS)..". ID: "..tostring(shId)..". LVL: "..tostring(sampGetPlayerScore(tonumber(shId)))..". РќРѕРјРµСЂ: "..sms[selecteddialogSMS]["Number"]..". Р’СЃРµРіРѕ СЃРѕРѕР±С‰РµРЅРёР№: "..tostring(#sms[selecteddialogSMS]["Chat"]).."."))
         getafkbutton()
       end
     end
@@ -1981,13 +1981,13 @@ function mode_diamondrp()
     end
   end
   function RPC.onServerMessage(color, text)
-    if selecteddialogSMS ~= nil and text:find("{33FF1F}Номер "..selecteddialogSMS..": {FF5500}") and getmenumber then
+    if selecteddialogSMS ~= nil and text:find("{33FF1F}РќРѕРјРµСЂ "..selecteddialogSMS..": {FF5500}") and getmenumber then
       if sms[selecteddialogSMS]["Number"] == "?" then
-        sms[selecteddialogSMS]["Number"] = string.match(text, "%{33FF1F%}Номер "..selecteddialogSMS.."%: %{FF5500%}(.+)")
+        sms[selecteddialogSMS]["Number"] = string.match(text, "%{33FF1F%}РќРѕРјРµСЂ "..selecteddialogSMS.."%: %{FF5500%}(.+)")
       end
       return false
     end
-    if text:find("Абонент доступен для звонка") and getmenumber then
+    if text:find("РђР±РѕРЅРµРЅС‚ РґРѕСЃС‚СѓРїРµРЅ РґР»СЏ Р·РІРѕРЅРєР°") and getmenumber then
       if sms[selecteddialogSMS]["Number"] ~= "?" then
         getmenumber = false
         return false
@@ -1995,7 +1995,7 @@ function mode_diamondrp()
     end
     if text:find("SMS") then
       text = string.gsub(text, "{FF8000}", "")
-      local smsText, smsNick, smsNumber = string.match(text, "{FF8C00}SMS%: {FFFF00}(.*)% {FF8C00}%| {FFFF00}Отправитель%: (.*) %(тел. (%d+)%)")
+      local smsText, smsNick, smsNumber = string.match(text, "{FF8C00}SMS%: {FFFF00}(.*)% {FF8C00}%| {FFFF00}РћС‚РїСЂР°РІРёС‚РµР»СЊ%: (.*) %(С‚РµР». (%d+)%)")
       if smsText and smsNick and smsNumber then
         smsId = 1001
         for i = 0, sampGetMaxPlayerId() + 1 do
@@ -2034,7 +2034,7 @@ function mode_diamondrp()
           return false
         end
       end
-      local smsText, smsNick, smsNumber = string.match(text, "{FFA500}SMS%: {FFFF00}(.*)% {FFA500}%| {FFFF00}Получатель%: (.*) %(тел. (%d+)%)")
+      local smsText, smsNick, smsNumber = string.match(text, "{FFA500}SMS%: {FFFF00}(.*)% {FFA500}%| {FFFF00}РџРѕР»СѓС‡Р°С‚РµР»СЊ%: (.*) %(С‚РµР». (%d+)%)")
       if smsText and smsNick and smsNumber then
         smsId = 1001
         for i = 0, sampGetMaxPlayerId() + 1 do
@@ -2098,7 +2098,7 @@ function mode_diamondrp()
     else
       if isPlayerControlLocked() then lockPlayerControl(false) end
     end
-    if imgui.SameLine() or imgui.Button(u8"Отправить") then
+    if imgui.SameLine() or imgui.Button(u8"РћС‚РїСЂР°РІРёС‚СЊ") then
       for i = 0, sampGetMaxPlayerId() do
         if sampIsPlayerConnected(i) and sampGetPlayerNickname(i) == selecteddialogSMS then k = i break end
         if i == sampGetMaxPlayerId() then k = "-" end
@@ -2144,7 +2144,7 @@ function mode_diamondrp()
               sms[sampGetPlayerNickname(i)]["Pinned"] = 0
               ikkk = 0
               iAddSMS = false
-              table.insert(sms[sampGetPlayerNickname(i)]["Chat"], {text = "Диалог создан", Nick = "мессенджер", type = "service", time = os.time()})
+              table.insert(sms[sampGetPlayerNickname(i)]["Chat"], {text = "Р”РёР°Р»РѕРі СЃРѕР·РґР°РЅ", Nick = "РјРµСЃСЃРµРЅРґР¶РµСЂ", type = "service", time = os.time()})
               selecteddialogSMS = sampGetPlayerNickname(i)
               SSDB_trigger = true
               ScrollToDialogSMS = true
@@ -2192,9 +2192,9 @@ function mode_diamondrp()
         end
       end
       if shId ~= nil and shId == "-" then
-        imgui.Text(u8:encode("[Оффлайн] Ник: "..tostring(selecteddialogSMS)..". Номер: "..sms[selecteddialogSMS]["Number"]..". Всего сообщений: "..tostring(#sms[selecteddialogSMS]["Chat"]).."."))
+        imgui.Text(u8:encode("[РћС„С„Р»Р°Р№РЅ] РќРёРє: "..tostring(selecteddialogSMS)..". РќРѕРјРµСЂ: "..sms[selecteddialogSMS]["Number"]..". Р’СЃРµРіРѕ СЃРѕРѕР±С‰РµРЅРёР№: "..tostring(#sms[selecteddialogSMS]["Chat"]).."."))
       else
-        imgui.Text(u8:encode("[Онлайн] Ник: "..tostring(selecteddialogSMS)..". ID: "..tostring(shId)..". LVL: "..tostring(sampGetPlayerScore(tonumber(shId)))..". Номер: "..sms[selecteddialogSMS]["Number"]..". Всего сообщений: "..tostring(#sms[selecteddialogSMS]["Chat"]).."."))
+        imgui.Text(u8:encode("[РћРЅР»Р°Р№РЅ] РќРёРє: "..tostring(selecteddialogSMS)..". ID: "..tostring(shId)..". LVL: "..tostring(sampGetPlayerScore(tonumber(shId)))..". РќРѕРјРµСЂ: "..sms[selecteddialogSMS]["Number"]..". Р’СЃРµРіРѕ СЃРѕРѕР±С‰РµРЅРёР№: "..tostring(#sms[selecteddialogSMS]["Chat"]).."."))
         getafkbutton()
       end
     end
@@ -2209,18 +2209,18 @@ function mode_trinityrp()
     end
   end
   function RPC.onServerMessage(color, text)
-    if text:find("Телефонный справочник") and getmenumber then
+    if text:find("РўРµР»РµС„РѕРЅРЅС‹Р№ СЃРїСЂР°РІРѕС‡РЅРёРє") and getmenumber then
       return false
     end
-    if selecteddialogSMS ~= nil and text:find("{F5DEB3}Имя: {ffffff}"..selecteddialogSMS) and getmenumber then
+    if selecteddialogSMS ~= nil and text:find("{F5DEB3}РРјСЏ: {ffffff}"..selecteddialogSMS) and getmenumber then
       if sms[selecteddialogSMS]["Number"] == "?" then
-        sms[selecteddialogSMS]["Number"] = string.match(text, "{F5DEB3}Имя: {ffffff}"..selecteddialogSMS.."{F5DEB3} Телефон: {ffffff}(.+){F5DEB3} Прожив")
+        sms[selecteddialogSMS]["Number"] = string.match(text, "{F5DEB3}РРјСЏ: {ffffff}"..selecteddialogSMS.."{F5DEB3} РўРµР»РµС„РѕРЅ: {ffffff}(.+){F5DEB3} РџСЂРѕР¶РёРІ")
       end
       getmenumber = false
       return false
     end
     if text:find("SMS") then
-      local smsText, smsNick, smsNumber = string.match(text, "SMS%:{......}% (.+)% {......}От%: {......}(.+) {......}Тел%: {......}(.+)")
+      local smsText, smsNick, smsNumber = string.match(text, "SMS%:{......}% (.+)% {......}РћС‚%: {......}(.+) {......}РўРµР»%: {......}(.+)")
       if smsText and smsNick and smsNumber then
         smsId = 1001
         for i = 0, sampGetMaxPlayerId() + 1 do
@@ -2260,7 +2260,7 @@ function mode_trinityrp()
           return false
         end
       end
-      local smsText, smsNick, smsNumber = string.match(text, "SMS%:{......}% (.*)% {......}Для%: {......}(.+) {......}Тел%: {......}(.+)")
+      local smsText, smsNick, smsNumber = string.match(text, "SMS%:{......}% (.*)% {......}Р”Р»СЏ%: {......}(.+) {......}РўРµР»%: {......}(.+)")
       if smsText and smsNick and smsNumber then
         smsId = 1001
         for i = 0, sampGetMaxPlayerId() + 1 do
@@ -2324,7 +2324,7 @@ function mode_trinityrp()
     else
       if isPlayerControlLocked() then lockPlayerControl(false) end
     end
-    if imgui.SameLine() or imgui.Button(u8"Отправить") then
+    if imgui.SameLine() or imgui.Button(u8"РћС‚РїСЂР°РІРёС‚СЊ") then
       for i = 0, sampGetMaxPlayerId() do
         if sampIsPlayerConnected(i) and sampGetPlayerNickname(i) == selecteddialogSMS then k = i break end
         if i == sampGetMaxPlayerId() then k = "-" end
@@ -2370,7 +2370,7 @@ function mode_trinityrp()
               sms[sampGetPlayerNickname(i)]["Pinned"] = 0
               ikkk = 0
               iAddSMS = false
-              table.insert(sms[sampGetPlayerNickname(i)]["Chat"], {text = "Диалог создан", Nick = "мессенджер", type = "service", time = os.time()})
+              table.insert(sms[sampGetPlayerNickname(i)]["Chat"], {text = "Р”РёР°Р»РѕРі СЃРѕР·РґР°РЅ", Nick = "РјРµСЃСЃРµРЅРґР¶РµСЂ", type = "service", time = os.time()})
               selecteddialogSMS = sampGetPlayerNickname(i)
               SSDB_trigger = true
               ScrollToDialogSMS = true
@@ -2418,9 +2418,9 @@ function mode_trinityrp()
         end
       end
       if shId ~= nil and shId == "-" then
-        imgui.Text(u8:encode("[Оффлайн] Ник: "..tostring(selecteddialogSMS)..". Номер: "..sms[selecteddialogSMS]["Number"]..". Всего сообщений: "..tostring(#sms[selecteddialogSMS]["Chat"]).."."))
+        imgui.Text(u8:encode("[РћС„С„Р»Р°Р№РЅ] РќРёРє: "..tostring(selecteddialogSMS)..". РќРѕРјРµСЂ: "..sms[selecteddialogSMS]["Number"]..". Р’СЃРµРіРѕ СЃРѕРѕР±С‰РµРЅРёР№: "..tostring(#sms[selecteddialogSMS]["Chat"]).."."))
       else
-        imgui.Text(u8:encode("[Онлайн] Ник: "..tostring(selecteddialogSMS)..". ID: "..tostring(shId)..". LVL: "..tostring(sampGetPlayerScore(tonumber(shId)))..". Номер: "..sms[selecteddialogSMS]["Number"]..". Всего сообщений: "..tostring(#sms[selecteddialogSMS]["Chat"]).."."))
+        imgui.Text(u8:encode("[РћРЅР»Р°Р№РЅ] РќРёРє: "..tostring(selecteddialogSMS)..". ID: "..tostring(shId)..". LVL: "..tostring(sampGetPlayerScore(tonumber(shId)))..". РќРѕРјРµСЂ: "..sms[selecteddialogSMS]["Number"]..". Р’СЃРµРіРѕ СЃРѕРѕР±С‰РµРЅРёР№: "..tostring(#sms[selecteddialogSMS]["Chat"]).."."))
         getafkbutton()
       end
     end
@@ -2467,7 +2467,7 @@ end
 
 function imgui_menu()
   imgui.BeginMenuBar()
-  if imgui.MenuItem(u8'Купить лицензию') then
+  if imgui.MenuItem(u8'РљСѓРїРёС‚СЊ Р»РёС†РµРЅР·РёСЋ') then
     cfg.messanger.mode = 1
     selectedTAB = 8
     inicfg.save(cfg, "smes")
@@ -2504,11 +2504,11 @@ function imgui_messanger_scrollkostil()
 end
 
 function imgui_messanger_FO(mode)
-  --mode = 4 => открыть смс на последней смс
-  --mode = 5 => открыть смс на создании диалога
+  --mode = 4 => РѕС‚РєСЂС‹С‚СЊ СЃРјСЃ РЅР° РїРѕСЃР»РµРґРЅРµР№ СЃРјСЃ
+  --mode = 5 => РѕС‚РєСЂС‹С‚СЊ СЃРјСЃ РЅР° СЃРѕР·РґР°РЅРёРё РґРёР°Р»РѕРіР°
   if mode == 4 then
     if LASTNICK_SMS == " " then
-      sampAddChatMessage("Ошибка: вам/вы ещё не писали смс.", color)
+      sampAddChatMessage("РћС€РёР±РєР°: РІР°Рј/РІС‹ РµС‰С‘ РЅРµ РїРёСЃР°Р»Рё СЃРјСЃ.", color)
     else
       cfg.messanger.mode = 2
       if selecteddialogSMS ~= LASTNICK_SMS then
@@ -2519,9 +2519,9 @@ function imgui_messanger_FO(mode)
       end
       if cfg.messanger.activesms and cfg.messanger.hotkey4 then
         if sampIsPlayerConnected(LASTID_SMS) and sampGetPlayerNickname(LASTID_SMS) == LASTNICK_SMS then
-          online = "Онлайн"
+          online = "РћРЅР»Р°Р№РЅ"
         else
-          online = "Оффлайн"
+          online = "РћС„С„Р»Р°Р№РЅ"
         end
         selecteddialogSMS = LASTNICK_SMS
         smsafk[selecteddialogSMS] = "CHECK AFK"
@@ -2604,7 +2604,7 @@ function imgui_messanger_sms_settings()
       inicfg.save(cfg, "smes")
     end
     if imgui.IsItemHovered() then
-      imgui.SetTooltip(u8"Показывать оффлайн игроков?")
+      imgui.SetTooltip(u8"РџРѕРєР°Р·С‹РІР°С‚СЊ РѕС„С„Р»Р°Р№РЅ РёРіСЂРѕРєРѕРІ?")
     end
     imgui.SameLine()
     if imgui.Checkbox("##SMSFILTER", iSMSfilterBool) then
@@ -2612,7 +2612,7 @@ function imgui_messanger_sms_settings()
       inicfg.save(cfg, "smes")
     end
     if imgui.IsItemHovered() then
-      imgui.SetTooltip(u8"Включить фильтр по нику?")
+      imgui.SetTooltip(u8"Р’РєР»СЋС‡РёС‚СЊ С„РёР»СЊС‚СЂ РїРѕ РЅРёРєСѓ?")
     end
     if iSMSfilterBool.v then
       imgui.SameLine()
@@ -2628,7 +2628,7 @@ function imgui_messanger_sms_settings()
         inicfg.save(cfg, "smes")
       end
       if imgui.IsItemHovered() then
-        imgui.SetTooltip(u8"Курсор на ввод текста при выборе диалога?")
+        imgui.SetTooltip(u8"РљСѓСЂСЃРѕСЂ РЅР° РІРІРѕРґ С‚РµРєСЃС‚Р° РїСЂРё РІС‹Р±РѕСЂРµ РґРёР°Р»РѕРіР°?")
       end
       imgui.SameLine()
       if imgui.Checkbox("##iChangeScrollSMS", iChangeScrollSMS) then
@@ -2636,10 +2636,10 @@ function imgui_messanger_sms_settings()
         inicfg.save(cfg, "smes")
       end
       if imgui.IsItemHovered() then
-        imgui.SetTooltip(u8"Менять позицию скролла в списке диалогов при выборе диалога?")
+        imgui.SetTooltip(u8"РњРµРЅСЏС‚СЊ РїРѕР·РёС†РёСЋ СЃРєСЂРѕР»Р»Р° РІ СЃРїРёСЃРєРµ РґРёР°Р»РѕРіРѕРІ РїСЂРё РІС‹Р±РѕСЂРµ РґРёР°Р»РѕРіР°?")
       end
       imgui.SameLine()
-      if imgui.Button(u8"Добавить", imgui.ImVec2(imgui.GetContentRegionAvailWidth() + 1, 20)) then
+      if imgui.Button(u8"Р”РѕР±Р°РІРёС‚СЊ", imgui.ImVec2(imgui.GetContentRegionAvailWidth() + 1, 20)) then
         ikkk = 0
         iAddSMS = true
         KeyboardFocusResetForNewDialog = true
@@ -2672,7 +2672,7 @@ end
 function imgui_messanger_sms_player_list()
   iooooo = os.clock()
   playerlistY = imgui.GetContentRegionAvail().y - 35
-  imgui.BeginChild("список ников", imgui.ImVec2(192, playerlistY), true)
+  imgui.BeginChild("СЃРїРёСЃРѕРє РЅРёРєРѕРІ", imgui.ImVec2(192, playerlistY), true)
   if counter == nil then counter = 0 end
   if counter > 10 then
     counter = 0
@@ -2751,16 +2751,16 @@ end
 
 function imgui_messanger_sup_player_list()
   playerlistY = imgui.GetContentRegionAvail().y - 35
-  imgui.BeginChild("список ников", imgui.ImVec2(192, playerlistY), true)
-  imgui_messanger_sup_showdialogs(1, "Чат")
-  imgui_messanger_sup_showdialogs(2, "Мессенджер")
-  imgui_messanger_sup_showdialogs(3, "Звуки")
-  imgui_messanger_sup_showdialogs(4, "Хоткеи")
-  imgui_messanger_sup_showdialogs(5, "Разное")
-  if not PREMIUM then imgui_messanger_sup_showdialogs(8, "Активировать код") else
-    imgui_messanger_sup_showdialogs(9, "Чёрный список")
+  imgui.BeginChild("СЃРїРёСЃРѕРє РЅРёРєРѕРІ", imgui.ImVec2(192, playerlistY), true)
+  imgui_messanger_sup_showdialogs(1, "Р§Р°С‚")
+  imgui_messanger_sup_showdialogs(2, "РњРµСЃСЃРµРЅРґР¶РµСЂ")
+  imgui_messanger_sup_showdialogs(3, "Р—РІСѓРєРё")
+  imgui_messanger_sup_showdialogs(4, "РҐРѕС‚РєРµРё")
+  imgui_messanger_sup_showdialogs(5, "Р Р°Р·РЅРѕРµ")
+  if not PREMIUM then imgui_messanger_sup_showdialogs(8, "РђРєС‚РёРІРёСЂРѕРІР°С‚СЊ РєРѕРґ") else
+    imgui_messanger_sup_showdialogs(9, "Р§С‘СЂРЅС‹Р№ СЃРїРёСЃРѕРє")
   end
-  imgui_messanger_sup_showdialogs(6, "О скрипте")
+  imgui_messanger_sup_showdialogs(6, "Рћ СЃРєСЂРёРїС‚Рµ")
   imgui.EndChild()
 end
 
@@ -2825,7 +2825,7 @@ function imgui_messanger_sms_showdialogs(table, typ)
             if imgui.Button(u8(k .. "[" .. pId .. "] - "..kolvo), imgui.ImVec2(-0.0001, 30)) then
               selecteddialogSMS = k
               ScrollToDialogSMS = true
-              online = "Онлайн"
+              online = "РћРЅР»Р°Р№РЅ"
               smsafk[selecteddialogSMS] = "CHECK AFK"
               scroll = true
               keyboard = true
@@ -2835,7 +2835,7 @@ function imgui_messanger_sms_showdialogs(table, typ)
             if imgui.Button(u8(k .. "[-] - "..kolvo), imgui.ImVec2(-0.0001, 30)) then
               selecteddialogSMS = k
               ScrollToDialogSMS = true
-              online = "Оффлайн"
+              online = "РћС„С„Р»Р°Р№РЅ"
               scroll = true
               keyboard = true
               SSDB1_trigger = true
@@ -2847,7 +2847,7 @@ function imgui_messanger_sms_showdialogs(table, typ)
               selecteddialogSMS = k
               ScrollToDialogSMS = true
               smsafk[selecteddialogSMS] = "CHECK AFK"
-              online = "Онлайн"
+              online = "РћРЅР»Р°Р№РЅ"
               scroll = true
               keyboard = true
               SSDB1_trigger = true
@@ -2856,7 +2856,7 @@ function imgui_messanger_sms_showdialogs(table, typ)
             if imgui.Button(u8(k .. "[-]"), imgui.ImVec2(-0.0001, 30)) then
               selecteddialogSMS = k
               ScrollToDialogSMS = true
-              online = "Оффлайн"
+              online = "РћС„С„Р»Р°Р№РЅ"
               scroll = true
               keyboard = true
               SSDB1_trigger = true
@@ -2884,36 +2884,36 @@ end
 function imgui_messanger_sms_player_list_contextmenu(k, typ)
   if imgui.BeginPopupContextItem("item context menu"..k) then
     if typ == "NotPinned" then
-      if imgui.Selectable(u8"Закрепить") then
+      if imgui.Selectable(u8"Р—Р°РєСЂРµРїРёС‚СЊ") then
         if PREMIUM then
           sms[k]["Pinned"] = 1
           SSDB_trigger = true
-          table.insert(sms[k]["Chat"], {text = "Собеседник закреплён", Nick = "мессенджер", type = "service", time = os.time()})
+          table.insert(sms[k]["Chat"], {text = "РЎРѕР±РµСЃРµРґРЅРёРє Р·Р°РєСЂРµРїР»С‘РЅ", Nick = "РјРµСЃСЃРµРЅРґР¶РµСЂ", type = "service", time = os.time()})
           ScrollToDialogSMS = true
         else
           imgui_itspremiuim()
         end
       end
     else
-      if imgui.Selectable(u8"Открепить") then
+      if imgui.Selectable(u8"РћС‚РєСЂРµРїРёС‚СЊ") then
         sms[k]["Pinned"] = 0
         SSDB_trigger = true
-        table.insert(sms[k]["Chat"], {text = "Собеседник откреплён", Nick = "мессенджер", type = "service", time = os.time()})
+        table.insert(sms[k]["Chat"], {text = "РЎРѕР±РµСЃРµРґРЅРёРє РѕС‚РєСЂРµРїР»С‘РЅ", Nick = "РјРµСЃСЃРµРЅРґР¶РµСЂ", type = "service", time = os.time()})
         ScrollToDialogSMS = true
       end
     end
     if sms[k]["Blocked"] ~= nil then
-      if imgui.Selectable(u8"Разблокировать") then
+      if imgui.Selectable(u8"Р Р°Р·Р±Р»РѕРєРёСЂРѕРІР°С‚СЊ") then
         sms[k]["Blocked"] = nil
-        table.insert(sms[k]["Chat"], {text = "Собеседник разблокирован", Nick = "мессенджер", type = "service", time = os.time()})
+        table.insert(sms[k]["Chat"], {text = "РЎРѕР±РµСЃРµРґРЅРёРє СЂР°Р·Р±Р»РѕРєРёСЂРѕРІР°РЅ", Nick = "РјРµСЃСЃРµРЅРґР¶РµСЂ", type = "service", time = os.time()})
         SSDB_trigger = true
         ScrollToDialogSMS = true
       end
     else
-      if imgui.Selectable(u8"Заблокировать") then
+      if imgui.Selectable(u8"Р—Р°Р±Р»РѕРєРёСЂРѕРІР°С‚СЊ") then
         if PREMIUM then
           sms[k]["Blocked"] = 1
-          table.insert(sms[k]["Chat"], {text = "Собеседник заблокирован", Nick = "мессенджер", type = "service", time = os.time()})
+          table.insert(sms[k]["Chat"], {text = "РЎРѕР±РµСЃРµРґРЅРёРє Р·Р°Р±Р»РѕРєРёСЂРѕРІР°РЅ", Nick = "РјРµСЃСЃРµРЅРґР¶РµСЂ", type = "service", time = os.time()})
           SSDB_trigger = true
           ScrollToDialogSMS = true
         else
@@ -2921,7 +2921,7 @@ function imgui_messanger_sms_player_list_contextmenu(k, typ)
         end
       end
     end
-    if imgui.Selectable(u8"Очистить") then
+    if imgui.Selectable(u8"РћС‡РёСЃС‚РёС‚СЊ") then
       ispinned = 0
       if sms[k] and sms[k]["Pinned"] == 1 then
         ispinned = sms[k]["Pinned"]
@@ -2930,12 +2930,12 @@ function imgui_messanger_sms_player_list_contextmenu(k, typ)
       sms[k]["Chat"] = {}
       sms[k]["Checked"] = 0
       sms[k]["Pinned"] = ispinned
-      sms[k]["Chat"][1] = {text = "Диалог очищен", Nick = "мессенджер", type = "service", time = os.time()}
+      sms[k]["Chat"][1] = {text = "Р”РёР°Р»РѕРі РѕС‡РёС‰РµРЅ", Nick = "РјРµСЃСЃРµРЅРґР¶РµСЂ", type = "service", time = os.time()}
       selecteddialogSMS = k
       SSDB_trigger = true
       ScrollToDialogSMS = true
     end
-    if imgui.Selectable(u8"Удалить") then
+    if imgui.Selectable(u8"РЈРґР°Р»РёС‚СЊ") then
       sms[k] = nil
       SSDB_trigger = true
     end
@@ -2957,7 +2957,7 @@ function imgui_messanger_sup_showdialogs(k, text)
 end
 
 function imgui_messanger_switchmode()
-  imgui.BeginChild("Переключатель режимов", imgui.ImVec2(192, 35), true)
+  imgui.BeginChild("РџРµСЂРµРєР»СЋС‡Р°С‚РµР»СЊ СЂРµР¶РёРјРѕРІ", imgui.ImVec2(192, 35), true)
   kolvo1 = 0
   if cfg.messanger.mode == 1 then
     imgui.PushStyleColor(imgui.Col.Button, imgui.ImColor(0, 0, 0, 200):GetVec4())
@@ -3083,12 +3083,12 @@ function imgui_messanger_sms_dialog()
 
         time = u8:encode(os.date("%d/%m/%y %X", v.time))
         if v.type == "FROM" then
-          header = u8:encode("->SMS от "..v.Nick)
+          header = u8:encode("->SMS РѕС‚ "..v.Nick)
           local r, g, b, a = imgui.ImColor(cfg.messanger.SmsInColor):GetRGBA()
           imgui.PushStyleColor(imgui.Col.ChildWindowBg, imgui.ImColor(r, g, b, a):GetVec4())
         end
         if v.type == "TO" then
-          header = u8:encode("<-SMS от "..v.Nick)
+          header = u8:encode("<-SMS РѕС‚ "..v.Nick)
           local r, g, b, a = imgui.ImColor(cfg.messanger.SmsOutColor):GetRGBA()
           imgui.PushStyleColor(imgui.Col.ChildWindowBg, imgui.ImColor(r, g, b, a):GetVec4())
         end
@@ -3214,7 +3214,7 @@ function imgui_messanger_sms_dialog()
     end
   else
     if sms[selecteddialogSMS] == nil then
-      local text = u8"Выберите диалог."
+      local text = u8"Р’С‹Р±РµСЂРёС‚Рµ РґРёР°Р»РѕРі."
       local width = imgui.GetWindowWidth()
       local height = imgui.GetWindowHeight()
       local calc = imgui.CalcTextSize(text)
@@ -3296,9 +3296,9 @@ function imgui_info_content()
   imgui.Text("<> by "..thisScript().authors[1])
   imgui_info_open("https://blast.hk/members/156833/")
   imgui.Text("")
-  imgui.TextWrapped(u8"Группа ВКонтакте (все новости здесь): ".."http://vk.com/qrlk.mods")
+  imgui.TextWrapped(u8"Р“СЂСѓРїРїР° Р’РљРѕРЅС‚Р°РєС‚Рµ (РІСЃРµ РЅРѕРІРѕСЃС‚Рё Р·РґРµСЃСЊ): ".."http://vk.com/qrlk.mods")
   imgui_info_open("http://vk.com/qrlk.mods")
-  imgui.TextWrapped(u8"Сообщение автору (все баги только сюда): ".."http://vk.me/qrlk.mods")
+  imgui.TextWrapped(u8"РЎРѕРѕР±С‰РµРЅРёРµ Р°РІС‚РѕСЂСѓ (РІСЃРµ Р±Р°РіРё С‚РѕР»СЊРєРѕ СЃСЋРґР°): ".."http://vk.me/qrlk.mods")
   imgui_info_open("http://vk.me/qrlk.mods")
   imgui.Text("")
   if imgui.TreeNode("Changelog") then
@@ -3306,11 +3306,11 @@ function imgui_info_content()
     imgui.TreePop()
   end
   imgui.Text("")
-  if PREMIUM then imgui.TextWrapped(u8:encode("Спасибо, что пользуетесь PREMIUM!")) imgui.TextWrapped(u8:encode("Лицензия принадлежит: "..licensenick..", сервер: "..licenseserver..", купленный мод: "..mode..".")) end
-  imgui.TextWrapped(u8:encode("Текущая цена: "..currentprice..". Купить можно тут: "..currentbuylink))
+  if PREMIUM then imgui.TextWrapped(u8:encode("РЎРїР°СЃРёР±Рѕ, С‡С‚Рѕ РїРѕР»СЊР·СѓРµС‚РµСЃСЊ PREMIUM!")) imgui.TextWrapped(u8:encode("Р›РёС†РµРЅР·РёСЏ РїСЂРёРЅР°РґР»РµР¶РёС‚: "..licensenick..", СЃРµСЂРІРµСЂ: "..licenseserver..", РєСѓРїР»РµРЅРЅС‹Р№ РјРѕРґ: "..mode..".")) end
+  imgui.TextWrapped(u8:encode("РўРµРєСѓС‰Р°СЏ С†РµРЅР°: "..currentprice..". РљСѓРїРёС‚СЊ РјРѕР¶РЅРѕ С‚СѓС‚: "..currentbuylink))
   imgui_info_open(currentbuylink)
   imgui.Text("")
-  imgui.Text(u8:encode("В скрипте задействованы следующие сампотехнологии:"))
+  imgui.Text(u8:encode("Р’ СЃРєСЂРёРїС‚Рµ Р·Р°РґРµР№СЃС‚РІРѕРІР°РЅС‹ СЃР»РµРґСѓСЋС‰РёРµ СЃР°РјРїРѕС‚РµС…РЅРѕР»РѕРіРёРё:"))
 
   imgui.BeginChild("##credits", imgui.ImVec2(580, 158), true)
   imgui.Columns(4, nil, false)
@@ -3483,14 +3483,14 @@ end
 
 
 function imgui_blacklist()
-  imgui.TextWrapped(u8"Здесь отображается ваш чёрный список.")
-  imgui.TextWrapped(u8"Щёлкните правой кнопкой, чтобы удалить.")
+  imgui.TextWrapped(u8"Р—РґРµСЃСЊ РѕС‚РѕР±СЂР°Р¶Р°РµС‚СЃСЏ РІР°С€ С‡С‘СЂРЅС‹Р№ СЃРїРёСЃРѕРє.")
+  imgui.TextWrapped(u8"Р©С‘Р»РєРЅРёС‚Рµ РїСЂР°РІРѕР№ РєРЅРѕРїРєРѕР№, С‡С‚РѕР±С‹ СѓРґР°Р»РёС‚СЊ.")
   imgui.Text("")
   for k, v in pairs(sms) do
     if v["Blocked"] ~= nil and v["Blocked"] == 1 then imgui.Text(u8:encode(k)) end
     if imgui.IsItemHovered() and imgui.IsMouseClicked(1) then
       v["Blocked"] = nil
-      table.insert(v["Chat"], {text = "Собеседник разблокирован", Nick = "мессенджер", type = "service", time = os.time()})
+      table.insert(v["Chat"], {text = "РЎРѕР±РµСЃРµРґРЅРёРє СЂР°Р·Р±Р»РѕРєРёСЂРѕРІР°РЅ", Nick = "РјРµСЃСЃРµРЅРґР¶РµСЂ", type = "service", time = os.time()})
       SSDB_trigger = true
     end
   end
@@ -3504,9 +3504,9 @@ function imgui_settings_2_sms_hideandcol()
   end
   imgui.SameLine()
   if iHideSmsIn.v then
-    imgui.Text(u8("Скрывать входящие сообщения?"))
+    imgui.Text(u8("РЎРєСЂС‹РІР°С‚СЊ РІС…РѕРґСЏС‰РёРµ СЃРѕРѕР±С‰РµРЅРёСЏ?"))
   else
-    imgui.TextDisabled(u8"Скрывать входящие сообщения?")
+    imgui.TextDisabled(u8"РЎРєСЂС‹РІР°С‚СЊ РІС…РѕРґСЏС‰РёРµ СЃРѕРѕР±С‰РµРЅРёСЏ?")
   end
 
   if imgui.Checkbox("##HideSmsOut", iHideSmsOut) then
@@ -3515,9 +3515,9 @@ function imgui_settings_2_sms_hideandcol()
   end
   imgui.SameLine()
   if iHideSmsOut.v then
-    imgui.Text(u8("Скрывать исходящие сообщения?"))
+    imgui.Text(u8("РЎРєСЂС‹РІР°С‚СЊ РёСЃС…РѕРґСЏС‰РёРµ СЃРѕРѕР±С‰РµРЅРёСЏ?"))
   else
-    imgui.TextDisabled(u8"Скрывать исходящие сообщения?")
+    imgui.TextDisabled(u8"РЎРєСЂС‹РІР°С‚СЊ РёСЃС…РѕРґСЏС‰РёРµ СЃРѕРѕР±С‰РµРЅРёСЏ?")
   end
 
 
@@ -3530,7 +3530,7 @@ function imgui_settings_2_sms_hideandcol()
     end
     imgui.SameLine()
     if iReplaceSmsInColor.v then
-      imgui.Text(u8("Цвет входящих сообщений изменяется на: "))
+      imgui.Text(u8("Р¦РІРµС‚ РІС…РѕРґСЏС‰РёС… СЃРѕРѕР±С‰РµРЅРёР№ РёР·РјРµРЅСЏРµС‚СЃСЏ РЅР°: "))
       imgui.SameLine(295)
       imgui.Text("")
       imgui.SameLine()
@@ -3541,7 +3541,7 @@ function imgui_settings_2_sms_hideandcol()
         inicfg.save(cfg, "smes")
       end
     else
-      imgui.TextDisabled(u8"Изменять цвет входящих сообщений?")
+      imgui.TextDisabled(u8"РР·РјРµРЅСЏС‚СЊ С†РІРµС‚ РІС…РѕРґСЏС‰РёС… СЃРѕРѕР±С‰РµРЅРёР№?")
     end
   end
 
@@ -3552,7 +3552,7 @@ function imgui_settings_2_sms_hideandcol()
     end
     imgui.SameLine()
     if iReplaceSmsOutColor.v then
-      imgui.Text(u8("Цвет исходящих сообщений изменяется на: "))
+      imgui.Text(u8("Р¦РІРµС‚ РёСЃС…РѕРґСЏС‰РёС… СЃРѕРѕР±С‰РµРЅРёР№ РёР·РјРµРЅСЏРµС‚СЃСЏ РЅР°: "))
       imgui.SameLine(295)
       imgui.Text("")
       imgui.SameLine()
@@ -3562,42 +3562,42 @@ function imgui_settings_2_sms_hideandcol()
         SmsOutColor_HEX = "0x"..string.sub(bit.tohex(join_argb(a, r, g, b)), 3, 8)
         inicfg.save(cfg, "smes")
       end
-    else imgui.TextDisabled(u8"Изменять цвет исходящих сообщений в чате?")
+    else imgui.TextDisabled(u8"РР·РјРµРЅСЏС‚СЊ С†РІРµС‚ РёСЃС…РѕРґСЏС‰РёС… СЃРѕРѕР±С‰РµРЅРёР№ РІ С‡Р°С‚Рµ?")
     end
   end
   changesmssent()
 end
 
 function imgui_settings_6_sms_messanger()
-  imgui.Text(u8("Цвета входящих смс в диалогах:"))
+  imgui.Text(u8("Р¦РІРµС‚Р° РІС…РѕРґСЏС‰РёС… СЃРјСЃ РІ РґРёР°Р»РѕРіР°С…:"))
   imgui.SameLine(210)
   imgui.Text("")
   imgui.SameLine()
-  if imgui.ColorEdit4(u8"Цвет фона входящего смс", iINcolor, imgui.ColorEditFlags.NoInputs + imgui.ColorEditFlags.NoLabel + imgui.ColorEditFlags.NoOptions + imgui.ColorEditFlags.AlphaBar) then
+  if imgui.ColorEdit4(u8"Р¦РІРµС‚ С„РѕРЅР° РІС…РѕРґСЏС‰РµРіРѕ СЃРјСЃ", iINcolor, imgui.ColorEditFlags.NoInputs + imgui.ColorEditFlags.NoLabel + imgui.ColorEditFlags.NoOptions + imgui.ColorEditFlags.AlphaBar) then
     cfg.messanger.SmsInColor = imgui.ImColor.FromFloat4(iINcolor.v[1], iINcolor.v[2], iINcolor.v[3], iINcolor.v[4]):GetU32()
     inicfg.save(cfg, "smes")
   end
   imgui.SameLine()
-  if imgui.ColorEdit4(u8"Цвет времени входящего смс", iSmsInTimeColor, imgui.ColorEditFlags.NoInputs + imgui.ColorEditFlags.NoLabel + imgui.ColorEditFlags.NoOptions + imgui.ColorEditFlags.AlphaBar) then
+  if imgui.ColorEdit4(u8"Р¦РІРµС‚ РІСЂРµРјРµРЅРё РІС…РѕРґСЏС‰РµРіРѕ СЃРјСЃ", iSmsInTimeColor, imgui.ColorEditFlags.NoInputs + imgui.ColorEditFlags.NoLabel + imgui.ColorEditFlags.NoOptions + imgui.ColorEditFlags.AlphaBar) then
     cfg.messanger.SmsInTimeColor = imgui.ImColor.FromFloat4(iSmsInTimeColor.v[1], iSmsInTimeColor.v[2], iSmsInTimeColor.v[3], iSmsInTimeColor.v[4]):GetU32()
     inicfg.save(cfg, "smes")
   end
 
   imgui.SameLine()
-  if imgui.ColorEdit4(u8"Цвет заголовка входящего смс", iSmsInHeaderColor, imgui.ColorEditFlags.NoInputs + imgui.ColorEditFlags.NoLabel + imgui.ColorEditFlags.NoOptions + imgui.ColorEditFlags.AlphaBar) then
+  if imgui.ColorEdit4(u8"Р¦РІРµС‚ Р·Р°РіРѕР»РѕРІРєР° РІС…РѕРґСЏС‰РµРіРѕ СЃРјСЃ", iSmsInHeaderColor, imgui.ColorEditFlags.NoInputs + imgui.ColorEditFlags.NoLabel + imgui.ColorEditFlags.NoOptions + imgui.ColorEditFlags.AlphaBar) then
     cfg.messanger.SmsInHeaderColor = imgui.ImColor.FromFloat4(iSmsInHeaderColor.v[1], iSmsInHeaderColor.v[2], iSmsInHeaderColor.v[3], iSmsInHeaderColor.v[4]):GetU32()
     inicfg.save(cfg, "smes")
   end
 
   imgui.SameLine()
-  if imgui.ColorEdit4(u8"Цвет текста входящего смс", iSmsInTextColor, imgui.ColorEditFlags.NoInputs + imgui.ColorEditFlags.NoLabel + imgui.ColorEditFlags.NoOptions + imgui.ColorEditFlags.AlphaBar) then
+  if imgui.ColorEdit4(u8"Р¦РІРµС‚ С‚РµРєСЃС‚Р° РІС…РѕРґСЏС‰РµРіРѕ СЃРјСЃ", iSmsInTextColor, imgui.ColorEditFlags.NoInputs + imgui.ColorEditFlags.NoLabel + imgui.ColorEditFlags.NoOptions + imgui.ColorEditFlags.AlphaBar) then
     cfg.messanger.SmsInTextColor = imgui.ImColor.FromFloat4(iSmsInTextColor.v[1], iSmsInTextColor.v[2], iSmsInTextColor.v[3], iSmsInTextColor.v[4]):GetU32()
     inicfg.save(cfg, "smes")
   end
 
   if cfg.messanger.SmsInColor ~= imgui.ImColor(66.3, 150.45, 249.9, 102):GetU32() or cfg.messanger.SmsInTimeColor ~= imgui.ImColor(0, 0, 0):GetU32() or cfg.messanger.SmsInHeaderColor ~= imgui.ImColor(255, 255, 255):GetU32() or cfg.messanger.SmsInTextColor ~= imgui.ImColor(255, 255, 255):GetU32() then
     imgui.SameLine()
-    if imgui.Button(u8"Сброс") then
+    if imgui.Button(u8"РЎР±СЂРѕСЃ") then
       cfg.messanger.SmsInColor = imgui.ImColor(66.3, 150.45, 249.9, 102):GetU32()
       cfg.messanger.SmsInTimeColor = imgui.ImColor(0, 0, 0):GetU32()
       cfg.messanger.SmsInHeaderColor = imgui.ImColor(255, 255, 255):GetU32()
@@ -3610,38 +3610,38 @@ function imgui_settings_6_sms_messanger()
     end
   end
 
-  imgui.Text(u8("Цвета исходящих смс в диалогах:"))
+  imgui.Text(u8("Р¦РІРµС‚Р° РёСЃС…РѕРґСЏС‰РёС… СЃРјСЃ РІ РґРёР°Р»РѕРіР°С…:"))
   imgui.SameLine(210)
   imgui.Text("")
   imgui.SameLine()
 
 
-  if imgui.ColorEdit4(u8"Цвет фона исходящих смс", iOUTcolor, imgui.ColorEditFlags.NoInputs + imgui.ColorEditFlags.NoLabel + imgui.ColorEditFlags.NoOptions + imgui.ColorEditFlags.AlphaBar) then
+  if imgui.ColorEdit4(u8"Р¦РІРµС‚ С„РѕРЅР° РёСЃС…РѕРґСЏС‰РёС… СЃРјСЃ", iOUTcolor, imgui.ColorEditFlags.NoInputs + imgui.ColorEditFlags.NoLabel + imgui.ColorEditFlags.NoOptions + imgui.ColorEditFlags.AlphaBar) then
     cfg.messanger.SmsOutColor = imgui.ImColor.FromFloat4(iOUTcolor.v[1], iOUTcolor.v[2], iOUTcolor.v[3], iOUTcolor.v[4]):GetU32()
     inicfg.save(cfg, "smes")
   end
 
   imgui.SameLine()
-  if imgui.ColorEdit4(u8"Цвет времени исходящего смс", iSmsOutTimeColor, imgui.ColorEditFlags.NoInputs + imgui.ColorEditFlags.NoLabel + imgui.ColorEditFlags.NoOptions + imgui.ColorEditFlags.AlphaBar) then
+  if imgui.ColorEdit4(u8"Р¦РІРµС‚ РІСЂРµРјРµРЅРё РёСЃС…РѕРґСЏС‰РµРіРѕ СЃРјСЃ", iSmsOutTimeColor, imgui.ColorEditFlags.NoInputs + imgui.ColorEditFlags.NoLabel + imgui.ColorEditFlags.NoOptions + imgui.ColorEditFlags.AlphaBar) then
     cfg.messanger.SmsOutTimeColor = imgui.ImColor.FromFloat4(iSmsOutTimeColor.v[1], iSmsOutTimeColor.v[2], iSmsOutTimeColor.v[3], iSmsOutTimeColor.v[4]):GetU32()
     inicfg.save(cfg, "smes")
   end
 
   imgui.SameLine()
-  if imgui.ColorEdit4(u8"Цвет заголовка исходящего смс", iSmsOutHeaderColor, imgui.ColorEditFlags.NoInputs + imgui.ColorEditFlags.NoLabel + imgui.ColorEditFlags.NoOptions + imgui.ColorEditFlags.AlphaBar) then
+  if imgui.ColorEdit4(u8"Р¦РІРµС‚ Р·Р°РіРѕР»РѕРІРєР° РёСЃС…РѕРґСЏС‰РµРіРѕ СЃРјСЃ", iSmsOutHeaderColor, imgui.ColorEditFlags.NoInputs + imgui.ColorEditFlags.NoLabel + imgui.ColorEditFlags.NoOptions + imgui.ColorEditFlags.AlphaBar) then
     cfg.messanger.SmsOutHeaderColor = imgui.ImColor.FromFloat4(iSmsOutHeaderColor.v[1], iSmsOutHeaderColor.v[2], iSmsOutHeaderColor.v[3], iSmsOutHeaderColor.v[4]):GetU32()
     inicfg.save(cfg, "smes")
   end
 
   imgui.SameLine()
-  if imgui.ColorEdit4(u8"Цвет текста исходящего смс", iSmsOutTextColor, imgui.ColorEditFlags.NoInputs + imgui.ColorEditFlags.NoLabel + imgui.ColorEditFlags.NoOptions + imgui.ColorEditFlags.AlphaBar) then
+  if imgui.ColorEdit4(u8"Р¦РІРµС‚ С‚РµРєСЃС‚Р° РёСЃС…РѕРґСЏС‰РµРіРѕ СЃРјСЃ", iSmsOutTextColor, imgui.ColorEditFlags.NoInputs + imgui.ColorEditFlags.NoLabel + imgui.ColorEditFlags.NoOptions + imgui.ColorEditFlags.AlphaBar) then
     cfg.messanger.SmsOutTextColor = imgui.ImColor.FromFloat4(iSmsOutTextColor.v[1], iSmsOutTextColor.v[2], iSmsOutTextColor.v[3], iSmsOutTextColor.v[4]):GetU32()
     inicfg.save(cfg, "smes")
   end
   --
   if cfg.messanger.SmsOutColor ~= imgui.ImColor(66.3, 150.45, 249.9, 102):GetU32() or cfg.messanger.SmsOutTimeColor ~= imgui.ImColor(0, 0, 0):GetU32() or cfg.messanger.SmsOutHeaderColor ~= imgui.ImColor(255, 255, 255):GetU32() or cfg.messanger.SmsOutTextColor ~= imgui.ImColor(255, 255, 255):GetU32() then
     imgui.SameLine()
-    if imgui.Button(u8"Сброс") then
+    if imgui.Button(u8"РЎР±СЂРѕСЃ") then
       cfg.messanger.SmsOutColor = imgui.ImColor(66.3, 150.45, 249.9, 102):GetU32()
       cfg.messanger.SmsOutTimeColor = imgui.ImColor(0, 0, 0):GetU32()
       cfg.messanger.SmsOutHeaderColor = imgui.ImColor(255, 255, 255):GetU32()
@@ -3653,7 +3653,7 @@ function imgui_settings_6_sms_messanger()
       inicfg.save(cfg, "smes")
     end
   end
-  if imgui.Checkbox("##включить сохранение бд смс", iStoreSMS) then
+  if imgui.Checkbox("##РІРєР»СЋС‡РёС‚СЊ СЃРѕС…СЂР°РЅРµРЅРёРµ Р±Рґ СЃРјСЃ", iStoreSMS) then
     if PREMIUM then
       if cfg.messanger.storesms == false then ingamelaunch = true imgui_messanger_sms_loadDB() end
       cfg.messanger.storesms = iStoreSMS.v
@@ -3669,17 +3669,17 @@ function imgui_settings_6_sms_messanger()
     for k, v in pairs(sms) do
       kol = kol + 1
     end
-    imgui.Text(u8:encode("СУБД активна. Количество диалогов: "..kol.."."))
+    imgui.Text(u8:encode("РЎРЈР‘Р” Р°РєС‚РёРІРЅР°. РљРѕР»РёС‡РµСЃС‚РІРѕ РґРёР°Р»РѕРіРѕРІ: "..kol.."."))
     imgui.NewLine()
     imgui.SameLine(32)
-    imgui.TextWrapped(u8:encode("Путь к БД: "..smsfile))
+    imgui.TextWrapped(u8:encode("РџСѓС‚СЊ Рє Р‘Р”: "..smsfile))
   else
     imgui.SameLine()
-    imgui.TextDisabled(u8"Сохранять БД смс?")
+    imgui.TextDisabled(u8"РЎРѕС…СЂР°РЅСЏС‚СЊ Р‘Р” СЃРјСЃ?")
     --imgui_messanger_sms_loadDB()
     if doesFileExist(smsfile) then
       imgui.SameLine()
-      if imgui.Button(u8("Удалить БД")) then
+      if imgui.Button(u8("РЈРґР°Р»РёС‚СЊ Р‘Р”")) then
         os.remove(smsfile)
         sms = {}
       end
@@ -3696,8 +3696,8 @@ function imgui_settings_13_sms_sounds()
   end
   if iSoundSmsIn.v then
     imgui.SameLine()
-    imgui.PushItemWidth(imgui.GetContentRegionAvailWidth() - imgui.CalcTextSize(u8"Звук исходящего сообщения").x)
-    imgui.SliderInt(u8"Звук входящего сообщения", iSoundSmsInNumber, 1, currentaudiokolDD)
+    imgui.PushItemWidth(imgui.GetContentRegionAvailWidth() - imgui.CalcTextSize(u8"Р—РІСѓРє РёСЃС…РѕРґСЏС‰РµРіРѕ СЃРѕРѕР±С‰РµРЅРёСЏ").x)
+    imgui.SliderInt(u8"Р—РІСѓРє РІС…РѕРґСЏС‰РµРіРѕ СЃРѕРѕР±С‰РµРЅРёСЏ", iSoundSmsInNumber, 1, currentaudiokolDD)
     if iSoundSmsInNumber.v ~= cfg.options.SoundSmsInNumber and iSoundSmsInNumber.v <= currentaudiokolDD then
       PLAYSMSIN = true
       cfg.options.SoundSmsInNumber = iSoundSmsInNumber.v
@@ -3705,7 +3705,7 @@ function imgui_settings_13_sms_sounds()
     end
   else
     imgui.SameLine()
-    imgui.TextDisabled(u8"Включить уведомление о входящем сообщении?")
+    imgui.TextDisabled(u8"Р’РєР»СЋС‡РёС‚СЊ СѓРІРµРґРѕРјР»РµРЅРёРµ Рѕ РІС…РѕРґСЏС‰РµРј СЃРѕРѕР±С‰РµРЅРёРё?")
   end
 
   if imgui.Checkbox("##SoundSmsOut", iSoundSmsOut) then
@@ -3714,8 +3714,8 @@ function imgui_settings_13_sms_sounds()
   end
   if iSoundSmsOut.v then
     imgui.SameLine()
-    imgui.PushItemWidth(imgui.GetContentRegionAvailWidth() - imgui.CalcTextSize(u8"Звук исходящего сообщения").x)
-    imgui.SliderInt(u8"Звук исходящего сообщения", iSoundSmsOutNumber, 1, currentaudiokolDD)
+    imgui.PushItemWidth(imgui.GetContentRegionAvailWidth() - imgui.CalcTextSize(u8"Р—РІСѓРє РёСЃС…РѕРґСЏС‰РµРіРѕ СЃРѕРѕР±С‰РµРЅРёСЏ").x)
+    imgui.SliderInt(u8"Р—РІСѓРє РёСЃС…РѕРґСЏС‰РµРіРѕ СЃРѕРѕР±С‰РµРЅРёСЏ", iSoundSmsOutNumber, 1, currentaudiokolDD)
     if iSoundSmsOutNumber.v ~= cfg.options.SoundSmsOutNumber and iSoundSmsOutNumber.v <= currentaudiokolDD then
       PLAYSMSOUT = true
       cfg.options.SoundSmsOutNumber = iSoundSmsOutNumber.v
@@ -3723,7 +3723,7 @@ function imgui_settings_13_sms_sounds()
     end
   else
     imgui.SameLine()
-    imgui.TextDisabled(u8"Включить уведомление об исходящем сообщении?")
+    imgui.TextDisabled(u8"Р’РєР»СЋС‡РёС‚СЊ СѓРІРµРґРѕРјР»РµРЅРёРµ РѕР± РёСЃС…РѕРґСЏС‰РµРј СЃРѕРѕР±С‰РµРЅРёРё?")
   end
 end
 
@@ -3745,11 +3745,11 @@ function imgui_settings_14_hotkeys()
     main_init_hotkeys()
   end
   imgui.SameLine()
-  imgui.Text(u8"Горячая клавиша активации скрипта.")
+  imgui.Text(u8"Р“РѕСЂСЏС‡Р°СЏ РєР»Р°РІРёС€Р° Р°РєС‚РёРІР°С†РёРё СЃРєСЂРёРїС‚Р°.")
   imgui.SameLine()
   imgui.TextDisabled("(?)")
   if imgui.IsItemHovered() then
-    imgui.SetTooltip(u8"По нажатию хоткея открывается окно скрипта.")
+    imgui.SetTooltip(u8"РџРѕ РЅР°Р¶Р°С‚РёСЋ С…РѕС‚РєРµСЏ РѕС‚РєСЂС‹РІР°РµС‚СЃСЏ РѕРєРЅРѕ СЃРєСЂРёРїС‚Р°.")
   end
 
   if imgui.Checkbox("##imhk6", imhk6) then
@@ -3759,14 +3759,14 @@ function imgui_settings_14_hotkeys()
   end
   imgui.SameLine()
   if imhk6.v then
-    imgui.Text(u8("Хоткей фокуса на ввод в активном диалоге."))
+    imgui.Text(u8("РҐРѕС‚РєРµР№ С„РѕРєСѓСЃР° РЅР° РІРІРѕРґ РІ Р°РєС‚РёРІРЅРѕРј РґРёР°Р»РѕРіРµ."))
   else
-    imgui.TextDisabled(u8"Включить хоткей фокуса на ввод в активном диалоге?")
+    imgui.TextDisabled(u8"Р’РєР»СЋС‡РёС‚СЊ С…РѕС‚РєРµР№ С„РѕРєСѓСЃР° РЅР° РІРІРѕРґ РІ Р°РєС‚РёРІРЅРѕРј РґРёР°Р»РѕРіРµ?")
   end
   imgui.SameLine()
   imgui.TextDisabled("(?)")
   if imgui.IsItemHovered() then
-    imgui.SetTooltip(u8"По нажатию хоткея устанавливается фокус на ввод сообщения в активном диалоге.")
+    imgui.SetTooltip(u8"РџРѕ РЅР°Р¶Р°С‚РёСЋ С…РѕС‚РєРµСЏ СѓСЃС‚Р°РЅР°РІР»РёРІР°РµС‚СЃСЏ С„РѕРєСѓСЃ РЅР° РІРІРѕРґ СЃРѕРѕР±С‰РµРЅРёСЏ РІ Р°РєС‚РёРІРЅРѕРј РґРёР°Р»РѕРіРµ.")
   end
 
   if imhk6.v then
@@ -3787,11 +3787,11 @@ function imgui_settings_14_hotkeys()
       main_init_hotkeys()
     end
     imgui.SameLine()
-    imgui.Text(u8"Горячая клавиша фокуса на ввод в активном диалоге.")
+    imgui.Text(u8"Р“РѕСЂСЏС‡Р°СЏ РєР»Р°РІРёС€Р° С„РѕРєСѓСЃР° РЅР° РІРІРѕРґ РІ Р°РєС‚РёРІРЅРѕРј РґРёР°Р»РѕРіРµ.")
     imgui.SameLine()
     imgui.TextDisabled("(?)")
     if imgui.IsItemHovered() then
-      imgui.SetTooltip(u8"Если мессенджер и диалог открыт, фокус устанавливается на ввод сообщения.")
+      imgui.SetTooltip(u8"Р•СЃР»Рё РјРµСЃСЃРµРЅРґР¶РµСЂ Рё РґРёР°Р»РѕРі РѕС‚РєСЂС‹С‚, С„РѕРєСѓСЃ СѓСЃС‚Р°РЅР°РІР»РёРІР°РµС‚СЃСЏ РЅР° РІРІРѕРґ СЃРѕРѕР±С‰РµРЅРёСЏ.")
     end
   end
 
@@ -3808,17 +3808,17 @@ function imgui_settings_14_hotkeys()
   end
   imgui.SameLine()
   if imhk4.v then
-    imgui.Text(u8("Хоткей быстрого ответа через мессенджер sms включен."))
+    imgui.Text(u8("РҐРѕС‚РєРµР№ Р±С‹СЃС‚СЂРѕРіРѕ РѕС‚РІРµС‚Р° С‡РµСЂРµР· РјРµСЃСЃРµРЅРґР¶РµСЂ sms РІРєР»СЋС‡РµРЅ."))
   else
-    imgui.TextDisabled(u8"Включить хоткей быстрого ответа через мессенджер sms?")
+    imgui.TextDisabled(u8"Р’РєР»СЋС‡РёС‚СЊ С…РѕС‚РєРµР№ Р±С‹СЃС‚СЂРѕРіРѕ РѕС‚РІРµС‚Р° С‡РµСЂРµР· РјРµСЃСЃРµРЅРґР¶РµСЂ sms?")
   end
   imgui.SameLine()
   imgui.TextDisabled("(?)")
   if imgui.IsItemHovered() then
     if PREMIUM then
-      imgui.SetTooltip(u8"По нажатию хоткея открывается/закрывается мессенджер sms с последним сообщением.\nЕсли он уже открыт, то фокус меняется на последнее сообщение.")
+      imgui.SetTooltip(u8"РџРѕ РЅР°Р¶Р°С‚РёСЋ С…РѕС‚РєРµСЏ РѕС‚РєСЂС‹РІР°РµС‚СЃСЏ/Р·Р°РєСЂС‹РІР°РµС‚СЃСЏ РјРµСЃСЃРµРЅРґР¶РµСЂ sms СЃ РїРѕСЃР»РµРґРЅРёРј СЃРѕРѕР±С‰РµРЅРёРµРј.\nР•СЃР»Рё РѕРЅ СѓР¶Рµ РѕС‚РєСЂС‹С‚, С‚Рѕ С„РѕРєСѓСЃ РјРµРЅСЏРµС‚СЃСЏ РЅР° РїРѕСЃР»РµРґРЅРµРµ СЃРѕРѕР±С‰РµРЅРёРµ.")
     else
-      imgui.SetTooltip(u8"Только для PREMIUM-пользователей.\nПо нажатию хоткея открывается/закрывается мессенджер sms с последним сообщением.\nЕсли он уже открыт, то фокус меняется на последнее сообщение.")
+      imgui.SetTooltip(u8"РўРѕР»СЊРєРѕ РґР»СЏ PREMIUM-РїРѕР»СЊР·РѕРІР°С‚РµР»РµР№.\nРџРѕ РЅР°Р¶Р°С‚РёСЋ С…РѕС‚РєРµСЏ РѕС‚РєСЂС‹РІР°РµС‚СЃСЏ/Р·Р°РєСЂС‹РІР°РµС‚СЃСЏ РјРµСЃСЃРµРЅРґР¶РµСЂ sms СЃ РїРѕСЃР»РµРґРЅРёРј СЃРѕРѕР±С‰РµРЅРёРµРј.\nР•СЃР»Рё РѕРЅ СѓР¶Рµ РѕС‚РєСЂС‹С‚, С‚Рѕ С„РѕРєСѓСЃ РјРµРЅСЏРµС‚СЃСЏ РЅР° РїРѕСЃР»РµРґРЅРµРµ СЃРѕРѕР±С‰РµРЅРёРµ.")
     end
   end
 
@@ -3840,11 +3840,11 @@ function imgui_settings_14_hotkeys()
       main_init_hotkeys()
     end
     imgui.SameLine()
-    imgui.Text(u8"Горячая клавиша быстрого ответа через мессенджер sms.")
+    imgui.Text(u8"Р“РѕСЂСЏС‡Р°СЏ РєР»Р°РІРёС€Р° Р±С‹СЃС‚СЂРѕРіРѕ РѕС‚РІРµС‚Р° С‡РµСЂРµР· РјРµСЃСЃРµРЅРґР¶РµСЂ sms.")
     imgui.SameLine()
     imgui.TextDisabled("(?)")
     if imgui.IsItemHovered() then
-      imgui.SetTooltip(u8"По нажатию хоткея открывается/закрывается мессенджер sms с последним сообщением.\nЕсли он уже открыт, то фокус меняется на последнее сообщение.")
+      imgui.SetTooltip(u8"РџРѕ РЅР°Р¶Р°С‚РёСЋ С…РѕС‚РєРµСЏ РѕС‚РєСЂС‹РІР°РµС‚СЃСЏ/Р·Р°РєСЂС‹РІР°РµС‚СЃСЏ РјРµСЃСЃРµРЅРґР¶РµСЂ sms СЃ РїРѕСЃР»РµРґРЅРёРј СЃРѕРѕР±С‰РµРЅРёРµРј.\nР•СЃР»Рё РѕРЅ СѓР¶Рµ РѕС‚РєСЂС‹С‚, С‚Рѕ С„РѕРєСѓСЃ РјРµРЅСЏРµС‚СЃСЏ РЅР° РїРѕСЃР»РµРґРЅРµРµ СЃРѕРѕР±С‰РµРЅРёРµ.")
     end
   end
 
@@ -3860,17 +3860,17 @@ function imgui_settings_14_hotkeys()
   if not PREMIUM then imhk5.v = false end
   imgui.SameLine()
   if imhk5.v then
-    imgui.Text(u8("Хоткей создания диалога через sms мессенджер включен."))
+    imgui.Text(u8("РҐРѕС‚РєРµР№ СЃРѕР·РґР°РЅРёСЏ РґРёР°Р»РѕРіР° С‡РµСЂРµР· sms РјРµСЃСЃРµРЅРґР¶РµСЂ РІРєР»СЋС‡РµРЅ."))
   else
-    imgui.TextDisabled(u8"Включить хоткей создания диалога через sms мессенджер?")
+    imgui.TextDisabled(u8"Р’РєР»СЋС‡РёС‚СЊ С…РѕС‚РєРµР№ СЃРѕР·РґР°РЅРёСЏ РґРёР°Р»РѕРіР° С‡РµСЂРµР· sms РјРµСЃСЃРµРЅРґР¶РµСЂ?")
   end
   imgui.SameLine()
   imgui.TextDisabled("(?)")
   if imgui.IsItemHovered() then
     if PREMIUM then
-      imgui.SetTooltip(u8"По нажатию хоткея открывается мессенджер смс с фокусом на ввод ника/id нового собеседника.")
+      imgui.SetTooltip(u8"РџРѕ РЅР°Р¶Р°С‚РёСЋ С…РѕС‚РєРµСЏ РѕС‚РєСЂС‹РІР°РµС‚СЃСЏ РјРµСЃСЃРµРЅРґР¶РµСЂ СЃРјСЃ СЃ С„РѕРєСѓСЃРѕРј РЅР° РІРІРѕРґ РЅРёРєР°/id РЅРѕРІРѕРіРѕ СЃРѕР±РµСЃРµРґРЅРёРєР°.")
     else
-      imgui.SetTooltip(u8"Только для PREMIUM-пользователей.\nПо нажатию хоткея открывается мессенджер смс с фокусом на ввод ника/id нового собеседника.")
+      imgui.SetTooltip(u8"РўРѕР»СЊРєРѕ РґР»СЏ PREMIUM-РїРѕР»СЊР·РѕРІР°С‚РµР»РµР№.\nРџРѕ РЅР°Р¶Р°С‚РёСЋ С…РѕС‚РєРµСЏ РѕС‚РєСЂС‹РІР°РµС‚СЃСЏ РјРµСЃСЃРµРЅРґР¶РµСЂ СЃРјСЃ СЃ С„РѕРєСѓСЃРѕРј РЅР° РІРІРѕРґ РЅРёРєР°/id РЅРѕРІРѕРіРѕ СЃРѕР±РµСЃРµРґРЅРёРєР°.")
     end
   end
 
@@ -3893,17 +3893,17 @@ function imgui_settings_14_hotkeys()
       main_init_hotkeys()
     end
     imgui.SameLine()
-    imgui.Text(u8"Горячая клавиша создания диалога через sms мессенджер.")
+    imgui.Text(u8"Р“РѕСЂСЏС‡Р°СЏ РєР»Р°РІРёС€Р° СЃРѕР·РґР°РЅРёСЏ РґРёР°Р»РѕРіР° С‡РµСЂРµР· sms РјРµСЃСЃРµРЅРґР¶РµСЂ.")
     imgui.SameLine()
     imgui.TextDisabled("(?)")
     if imgui.IsItemHovered() then
-      imgui.SetTooltip(u8"По нажатию хоткея открывается мессенджер смс с фокусом на ввод ника/id нового собеседника.")
+      imgui.SetTooltip(u8"РџРѕ РЅР°Р¶Р°С‚РёСЋ С…РѕС‚РєРµСЏ РѕС‚РєСЂС‹РІР°РµС‚СЃСЏ РјРµСЃСЃРµРЅРґР¶РµСЂ СЃРјСЃ СЃ С„РѕРєСѓСЃРѕРј РЅР° РІРІРѕРґ РЅРёРєР°/id РЅРѕРІРѕРіРѕ СЃРѕР±РµСЃРµРґРЅРёРєР°.")
     end
   end
 end
 
 function imgui_settings_15_extra()
-  if imgui.Checkbox(u8"Рендерить курсор силами gta?", MouseDrawCursor) then
+  if imgui.Checkbox(u8"Р РµРЅРґРµСЂРёС‚СЊ РєСѓСЂСЃРѕСЂ СЃРёР»Р°РјРё gta?", MouseDrawCursor) then
     cfg.options.MouseDrawCursor = MouseDrawCursor.v
     imgui.GetIO().MouseDrawCursor = MouseDrawCursor.v
     inicfg.save(cfg, "smes")
@@ -3911,7 +3911,7 @@ function imgui_settings_15_extra()
   imgui.SameLine()
   imgui.TextDisabled("(?)")
   if imgui.IsItemHovered() then
-    imgui.SetTooltip(u8"Если включить, курсор будет отображаться на скринах.\nМинус: курсор будет немного лагать.")
+    imgui.SetTooltip(u8"Р•СЃР»Рё РІРєР»СЋС‡РёС‚СЊ, РєСѓСЂСЃРѕСЂ Р±СѓРґРµС‚ РѕС‚РѕР±СЂР°Р¶Р°С‚СЊСЃСЏ РЅР° СЃРєСЂРёРЅР°С….\nРњРёРЅСѓСЃ: РєСѓСЂСЃРѕСЂ Р±СѓРґРµС‚ РЅРµРјРЅРѕРіРѕ Р»Р°РіР°С‚СЊ.")
   end
 end
 
@@ -3994,7 +3994,7 @@ do
       local ch = s:byte(i)
       if ch >= 192 and ch <= 223 then -- upper russian characters
         output = output .. russian_characters[ch + 32]
-      elseif ch == 168 then -- Ё
+      elseif ch == 168 then -- РЃ
         output = output .. russian_characters[184]
       else
         output = output .. string.char(ch)
@@ -4013,7 +4013,7 @@ do
       local ch = s:byte(i)
       if ch >= 224 and ch <= 255 then -- lower russian characters
         output = output .. russian_characters[ch - 32]
-      elseif ch == 184 then -- ё
+      elseif ch == 184 then -- С‘
         output = output .. russian_characters[168]
       else
         output = output .. string.char(ch)
